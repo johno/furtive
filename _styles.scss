@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Site styles
+   ========================================================================== */
+
+.hero {
+  display: table;
+  width: 100%;
+  bottom: 0;
+  min-height: 100%;
+  text-align: center;
+}
+
+.hero-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+a.hero-btn,
+a.hero-btn:hover,
+a.hero-btn:visited {
+  padding: 10px;
+  color: $white;
+  font-size: 20px;
+  text-decoration: none;
+  border: 3px solid $white;
+  border-radius: 3px;
+}
+
+a.hero-btn:hover {
+  opacity: 0.8;
+}
+
+.section {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.col {
+  @extend .room-lg-y;
+  @extend .cushion-lg;
+
+  display: table-cell;
+  vertical-align: top;
+}
+
+.col {
+  @media screen and (max-width: 48em) {
+    padding: $padding/2;
+    display: block;
+  }
+}

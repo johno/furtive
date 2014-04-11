@@ -1,0 +1,35 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+pre, code {
+  cursor: text;
+  font-family: $monospace-font-family;
+}
+
+.txt-muted {
+  opacity: 0.7;
+}
+
+.txt-thin {
+  font-weight: 100;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+.txt-caps {
+  font-variant: small-caps;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
+.txt-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

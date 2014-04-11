@@ -1,0 +1,31 @@
+@mixin center-children { text-align: center; }
+@mixin right-children  { text-align: right;  }
+@mixin left-children   { text-align: left;   }
+
+@mixin full-width {
+  width: 100%;
+  left: 0;
+  overflow-x: hidden;
+  
+  &:after, &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 9999px;
+  }
+  &:before { right: 100% }
+  &:after { left: 100% }
+}
+
+// Clearfix Acknowledgements
+// https://github.com/thoughtbot/bourbon/blob/master/dist/addons/_clearfix.scss
+// Micro clearfix: [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/)
+// From: Thoughbot's bourbon library.
+@mixin clearfix {
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
