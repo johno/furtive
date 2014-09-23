@@ -1,0 +1,25 @@
+{
+  "name": "furtive",
+  "version": "0.0.1",
+  "description": "A forward-thinking, lightweight, CSS microframework. Minimal by design.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnotander/furtive.git"
+  },
+  "keywords": [
+    "furtive",
+    "css",
+    "microframework",
+    "scss"
+  ],
+  "author": "John Otander <johnotander@gmail.com> (http://johnotander.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnotander/furtive/issues"
+  },
+  "homepage": "https://github.com/johnotander/furtive"
+}

@@ -1,5 +1,5 @@
 # Furtive
 
-A collection of CSS utilities  that every project should have.
+_Currently under development._
 
-<http://furtive.co>
+A forward-thinking, lightweight, CSS microframework. Minimal by design.

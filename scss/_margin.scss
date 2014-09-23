@@ -1,0 +1,41 @@
+$margin: 1rem;
+
+.m0  { margin: 0; }
+.mx0 { margin-left: 0; margin-right: 0; }
+.my0 { margin-top: 0; margin-bottom: 0; }
+
+.m1  { margin: $margin; }
+.mx1 { margin-left: $margin; margin-right: $margin; }
+.my1 { margin-top: $margin; margin-bottom: $margin; }
+
+.m2  { margin: $margin*2; }
+.mx2 { margin-left: $margin*2; margin-right: $margin*2; }
+.my2 { margin-top: $margin*2; margin-bottom: $margin*2; }
+
+@media screen and (min-width: $viewport-m) {
+  .m0-m  { margin: 0; }
+  .mx0-m { margin-left: 0; margin-right: 0; }
+  .my0-m { margin-top: 0; margin-bottom: 0; }
+
+  .m1-m  { margin: $margin; }
+  .mx1-m { margin-left: $margin; margin-right: $margin; }
+  .my1-m { margin-top: $margin; margin-bottom: $margin; }
+
+  .m2-m  { margin: $margin*2; }
+  .mx2-m { margin-left: $margin*2; margin-right: $margin*2; }
+  .my2-m { margin-top: $margin*2; margin-bottom: $margin*2; }
+}
+
+@media screen and (min-width: $viewport-l) {
+  .m0-l  { margin: 0; }
+  .mx0-l { margin-left: 0; margin-right: 0; }
+  .my0-l { margin-top: 0; margin-bottom: 0; }
+
+  .m1-l  { margin: $margin; }
+  .mx1-l { margin-left: $margin; margin-right: $margin; }
+  .my1-l { margin-top: $margin; margin-bottom: $margin; }
+
+  .m2-l  { margin: $margin*2; }
+  .mx2-l { margin-left: $margin*2; margin-right: $margin*2; }
+  .my2-l { margin-top: $margin*2; margin-bottom: $margin*2; }
+}
