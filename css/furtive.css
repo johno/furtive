@@ -541,7 +541,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 0.88rem; }
 
-small, .small {
+small, .small, .btn--s {
   font-size: 0.707em; }
 
 pre, code {

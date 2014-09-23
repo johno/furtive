@@ -71,4 +71,7 @@
   }
 }
 
-.btn--s { padding: $padding/2; }
+.btn--s {
+  @extend .small;
+  padding: $padding/2;
+}
