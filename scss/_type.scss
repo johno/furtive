@@ -1,6 +1,4 @@
-html {
-  font-size: $font-size;
-}
+html { font-size: $font-size; }
 
 body {
   font-weight: $font-weight;
@@ -34,21 +32,29 @@ h1,
 }
 
 h2,
-.h2 {
-  font-size: 2.827em;
-}
+.h2 { font-size: 2.827em; }
 
 h3,
-.h3 {
-  font-size: 1.999em;
-}
+.h3 { font-size: 1.999em; }
 
 h4,
-.h4 {
-  font-size: 1.414em;
-}
+.h4 { font-size: 1.414em; }
 
 small,
-.small {
-  font-size: 0.707em;
+.small { font-size: 0.707em; }
+
+.italic { font-style: italic; }
+
+.thin { font-weight: 100; }
+
+.bold { font-weight: bold; }
+
+.caps { font-variant: small-caps; }
+
+.justify { text-align: justify; }
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
