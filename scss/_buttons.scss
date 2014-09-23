@@ -1,10 +1,14 @@
-.btn {
+%btn--base {
   padding: $padding;
   border: 2px solid #ccc;
   border-radius: 2px;
   color: $font-color;
   text-decoration: none;
   text-align: center;
+}
+
+.btn {
+  @extend %btn--base;
 
   &:hover,
   &:focus,
@@ -13,12 +17,8 @@
   }
 }
 
-.btn--s {
-  padding: $padding/2;
-}
-
 .btn--link {
-  @extend .btn;
+  @extend %btn--base;
 
   border-color: transparent;
   color: $link-color;
@@ -30,7 +30,7 @@
 }
 
 .btn--blue {
-  @extend .btn;
+  @extend %btn--base;
 
   border-color: darken($blue, 3%);
   background-color: $blue;
@@ -44,7 +44,7 @@
 }
 
 .btn--green {
-  @extend .btn;
+  @extend %btn--base;
 
   border-color: darken($green, 4%);
   background-color: $green;
@@ -58,7 +58,7 @@
 }
 
 .btn--gray {
-  @extend .btn;
+  @extend %btn--base;
 
   border-color: darken($dark-gray, 5%);
   background-color: $dark-gray;
@@ -69,4 +69,9 @@
   &:active {
     background-color: darken($dark-gray, 10%);
   }
+}
+
+.btn--s {
+  @extend .small;
+  padding: $padding/2;
 }
