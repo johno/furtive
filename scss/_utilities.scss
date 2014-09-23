@@ -1,1 +1,20 @@
 .muted { opacity: .7; }
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.left   { float: left;   }
+.right  { float: right;  }
+.center { float: center; }
+.none   { float: none;   }
+
+.center { margin: auto auto; }
+
+.txt-center { text-align: center; }
+.txt-right  { text-align: right;  }
+.txt-left   { text-align: left;   }
