@@ -322,6 +322,19 @@ td, th {
 * {
   box-sizing: border-box; }
 
+.measure {
+  max-width: 48rem;
+  margin: 0 auto; }
+
+.w100, .w100-s {
+  width: 100%;
+  display: block; }
+
+@media screen and (min-width: 32rem) {
+  .w100-s {
+    width: auto;
+    display: inline-block; } }
+
 .m0 {
   margin: 0; }
 
@@ -493,7 +506,15 @@ td, th {
     padding-bottom: 2rem; } }
 
 html {
-  font-size: 16px; }
+  font-size: 12px; }
+
+@media screen and (min-width: 32rem) and (max-width: 48rem) {
+  html {
+    font-size: 15px; } }
+
+@media screen and (min-width: 48rem) {
+  html {
+    font-size: 16px; } }
 
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -584,11 +605,40 @@ pre, code {
 img, canvas, iframe, video, svg, select, textarea {
   max-width: 100%; }
 
-.btn {
+.btn, .btn--link, .btn--blue, .btn--green, .btn--gray {
   padding: 1rem;
   border: 2px solid #ccc;
   border-radius: 2px;
   color: #333;
-  text-decoration: none; }
-  .btn:hover {
+  text-decoration: none;
+  text-align: center; }
+  .btn:hover, .btn--link:hover, .btn--blue:hover, .btn--green:hover, .btn--gray:hover, .btn:focus, .btn--link:focus, .btn--blue:focus, .btn--green:focus, .btn--gray:focus, .btn:active, .btn--link:active, .btn--blue:active, .btn--green:active, .btn--gray:active {
     background-color: rgba(0, 0, 0, 0.05); }
+
+.btn--link {
+  border-color: transparent;
+  color: #3498db; }
+  .btn--link:hover {
+    background-color: transparent;
+    color: #1d6fa5; }
+
+.btn--blue {
+  border-color: #2792d9;
+  background-color: #3498db;
+  color: #fff; }
+  .btn--blue:hover, .btn--blue:focus, .btn--blue:active {
+    background-color: #217dbb; }
+
+.btn--green {
+  border-color: #22a977;
+  background-color: #25ba84;
+  color: #fff; }
+  .btn--green:hover, .btn--green:focus, .btn--green:active {
+    background-color: #1d8f65; }
+
+.btn--gray {
+  border-color: rgba(59, 59, 59, 0.99);
+  background-color: rgba(72, 72, 72, 0.99);
+  color: #fff; }
+  .btn--gray:hover, .btn--gray:focus, .btn--gray:active {
+    background-color: rgba(46, 46, 46, 0.99); }

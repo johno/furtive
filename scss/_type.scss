@@ -2,6 +2,14 @@
 
 html { font-size: $font-size; }
 
+@media screen and (min-width: $viewport-m) and (max-width: $viewport-l) {
+  html { font-size: $font-size-m; }
+}
+
+@media screen and (min-width: $viewport-l) {
+  html { font-size: $font-size-l; }
+}
+
 body {
   font-family: $font-family;
   font-weight: $font-weight;

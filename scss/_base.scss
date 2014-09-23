@@ -1,1 +1,19 @@
 * { box-sizing: border-box; }
+
+.measure {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.w100,
+.w100-s {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: $viewport-m) {
+  .w100-s {
+    width: auto;
+    display: inline-block;
+  }
+}
