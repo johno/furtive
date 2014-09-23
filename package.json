@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/johnotander/furtive/issues"
   },
-  "homepage": "https://github.com/johnotander/furtive"
+  "homepage": "https://github.com/johnotander/furtive",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-minify-css": "^0.3.10",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.3",
+    "normalize.css": "^3.0.1"
+  }
 }
