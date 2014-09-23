@@ -13,6 +13,10 @@
   }
 }
 
+.btn--s {
+  padding: $padding/2;
+}
+
 .btn--link {
   @extend .btn;
 
