@@ -580,3 +580,15 @@ pre, code {
 
 .txt-left {
   text-align: left; }
+
+img, canvas, iframe, video, svg, select, textarea {
+  max-width: 100%; }
+
+.btn {
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  color: #333;
+  text-decoration: none; }
+  .btn:hover {
+    background-color: rgba(0, 0, 0, 0.05); }
