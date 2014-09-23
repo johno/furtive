@@ -492,19 +492,14 @@ td, th {
     padding-top: 2rem;
     padding-bottom: 2rem; } }
 
-* {
-  box-sizing: border-box; }
-
 html {
   font-size: 16px; }
 
 body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.45;
   color: #333; }
-
-.muted {
-  opacity: 0.7; }
 
 p, .p {
   font-size: 1em;
@@ -530,3 +525,58 @@ h4, .h4 {
 
 small, .small {
   font-size: 0.707em; }
+
+pre, code {
+  font-family: "Monaco", "Lucida Console", Courier, monospace; }
+
+.italic {
+  font-style: italic; }
+
+.thin {
+  font-weight: 100; }
+
+.bold {
+  font-weight: bold; }
+
+.caps {
+  font-variant: small-caps; }
+
+.justify {
+  text-align: justify; }
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.muted {
+  opacity: 0.7; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.center {
+  float: center; }
+
+.none {
+  float: none; }
+
+.center {
+  margin: auto auto; }
+
+.txt-center {
+  text-align: center; }
+
+.txt-right {
+  text-align: right; }
+
+.txt-left {
+  text-align: left; }

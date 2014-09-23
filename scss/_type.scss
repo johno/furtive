@@ -1,6 +1,7 @@
 html { font-size: $font-size; }
 
 body {
+  font-family: $font-family;
   font-weight: $font-weight;
   line-height: 1.45;
   color: $font-color;
@@ -42,6 +43,11 @@ h4,
 
 small,
 .small { font-size: 0.707em; }
+
+pre,
+code {
+  font-family: $monospace-font-family;
+}
 
 .italic { font-style: italic; }
 
