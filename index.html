@@ -9,7 +9,7 @@
 <meta name="description" content="A forward-thinking, CSS micro-framework. Minimal by design.">
 <link rel="stylesheet" href="css/furtive.min.css">
 </head>
-<body class="m2">
+<body>
   <div class="py2">
     <div class="txt--center">
       <h1 class="h2">
@@ -21,15 +21,34 @@
       </div>
     </div>
   </div>
-  <div class="measure">
+  <div class="bg--off-white p2">
+    <section class="measure">
+      <h2>Why do we care?</h2>
+      <p class="h4">
+        Furtive is <em>truly</em> mobile-first. Meaning, all media queries are done done by larger viewports.
+        Minimal by design is the core philosophy that Furtive was built upon. As a result, this isn't bootstrap.
+        Nor is it intended to be, however its footprint is small. Furtive is intended to be just that, furtive.
+      </p>
+      <p class="h4">
+        Furtive remains lightweight because it doesn't preoccupy itself with older browsers. As
+        a result, Furtive can use cutting edge tech like <a href="http://caniuse.com/#search=flexbox">flexbox</a>,
+        <a href="http://caniuse.com/#search=svg">SVGs</a>, and limited vendor prefixing. So, if older browser 
+        support is necessary for you, it's probably not a good fit. Sorry about that.
+      </p>
+      <p class="h4">
+        However, if a m
+      </p>
+    </section>
+  </div>
+  <section class="measure">
     <h3>Buttons</h3>
     <a href="#" class="w100-s my1 btn">.btn</a>
     <a href="#" class="w100-s my1 btn--blue">.btn--blue</a>
     <a href="#" class="w100-s my1 btn--green">.btn--green</a>
     <a href="#" class="w100-s my1 btn--gray">.btn--gray</a>
     <a href="#" class="w100-s my1 btn--link">.btn--link</a>
-  </div>
-  <div class="measure">
+  </section>
+  <section class="measure">
     <h3>Type Utilities</h3>
     <p class="h4">
       In order to ensure that you can modify type styling on the fly, 
@@ -51,8 +70,8 @@
       <span class="h5">.h5</span>
       <span class="h6">.h6</span>
     </p>
-  </div>
-  <div class="measure">
+  </section>
+  <sectino class="measure">
     <h3>Colors</h3>
     <div class="bg--white p2">.bg--white</div>
     <div class="bg--off-white p2">.bg--off-white</div>
@@ -63,6 +82,6 @@
     <div class="bg--orange p2">.bg--orange</div>
     <div class="bg--blue p2">.bg--blue</div>
     <div class="bg--green p2">.bg--green</div>
-  </div>
+  </section>
 </body>
 </html>
