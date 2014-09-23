@@ -1,0 +1,24 @@
+{
+  "name": "furtive",
+  "version": "0.0.1",
+  "homepage": "https://github.com/johnotander/furtive",
+  "authors": [
+    "John Otander <johnotander@gmail.com>"
+  ],
+  "description": "A forward-thinking, CSS micro-framework. Minimal by design.",
+  "keywords": [
+    "furtive",
+    "css",
+    "micro-framework",
+    "scss",
+    "minimal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
