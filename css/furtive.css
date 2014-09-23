@@ -326,15 +326,6 @@ td, th {
   max-width: 48rem;
   margin: 0 auto; }
 
-.w100, .w100-s {
-  width: 100%;
-  display: block; }
-
-@media screen and (min-width: 32rem) {
-  .w100-s {
-    width: auto;
-    display: inline-block; } }
-
 .m0 {
   margin: 0; }
 
@@ -584,16 +575,16 @@ pre, code {
   display: table;
   clear: both; }
 
-.left {
+.flt--left {
   float: left; }
 
-.right {
+.flt--right {
   float: right; }
 
-.center {
+.flt--center {
   float: center; }
 
-.none {
+.flt--none {
   float: none; }
 
 .center {
@@ -607,6 +598,15 @@ pre, code {
 
 .txt--left {
   text-align: left; }
+
+.w100, .w100--s {
+  width: 100%;
+  display: block; }
+
+@media screen and (min-width: 32rem) {
+  .w100--s {
+    width: auto;
+    display: inline-block; } }
 
 img, canvas, iframe, video, svg, select, textarea {
   max-width: 100%; }
