@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/johnotander/furtive",
   "devDependencies": {
+    "gray": "0.0.4",
     "gulp": "^3.8.8",
     "gulp-minify-css": "^0.3.10",
     "gulp-rename": "^1.2.0",

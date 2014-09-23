@@ -13,11 +13,8 @@ gulp.task('scss', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('min', function() {
-  return gulp.src('css/furtive.scss')
-    .pipe(cssmin())
-    .pipe(rename('furtive.min.css'))
-    .pipe(gulp.dest('css'));
+gulp.task('watch', function() {
+  gulp.watch('scss/*.scss', ['scss']);
 });
 
-gulp.task('default', ['scss', 'min']);
+gulp.task('default', ['scss', 'watch']);

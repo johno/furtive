@@ -2,6 +2,14 @@
 
 html { font-size: $font-size; }
 
+@media screen and (min-width: $viewport-m) and (max-width: $viewport-l) {
+  html { font-size: $font-size-m; }
+}
+
+@media screen and (min-width: $viewport-l) {
+  html { font-size: $font-size-l; }
+}
+
 body {
   font-family: $font-family;
   font-weight: $font-weight;
@@ -11,8 +19,8 @@ body {
 
 p,
 .p {
-  font-size: 1em;
-  margin-bottom: 1.3em;
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 h1,
@@ -23,7 +31,7 @@ h3,
 .h3,
 h4,
 .h4 {
-  margin: 1.414em 0 0.5em;
+  margin: 1.414rem 0 0.5rem;
   font-weight: inherit;
   line-height: 1.2;
 }
@@ -31,17 +39,23 @@ h4,
 h1,
 .h1 {
   margin-top: 0;
-  font-size: 3.998em;
+  font-size: 3.998rem;
 }
 
 h2,
-.h2 { font-size: 2.827em; }
+.h2 { font-size: 2.827rem; }
 
 h3,
-.h3 { font-size: 1.999em; }
+.h3 { font-size: 1.999rem; }
 
 h4,
-.h4 { font-size: 1.414em; }
+.h4 { font-size: 1.414rem; }
+
+h5,
+.h5 { font-size: 1.121rem; }
+
+h6,
+.h6 { font-size: .88rem; }
 
 small,
 .small { font-size: 0.707em; }
