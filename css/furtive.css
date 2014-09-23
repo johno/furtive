@@ -618,11 +618,9 @@ img, canvas, iframe, video, svg, select, textarea {
   color: #333;
   text-decoration: none;
   text-align: center; }
-  .btn:hover, .btn--link:hover, .btn--blue:hover, .btn--green:hover, .btn--gray:hover, .btn:focus, .btn--link:focus, .btn--blue:focus, .btn--green:focus, .btn--gray:focus, .btn:active, .btn--link:active, .btn--blue:active, .btn--green:active, .btn--gray:active {
-    background-color: rgba(0, 0, 0, 0.05); }
 
-.btn--s {
-  padding: 0.5rem; }
+.btn:hover, .btn:focus, .btn:active {
+  background-color: rgba(0, 0, 0, 0.05); }
 
 .btn--link {
   border-color: transparent;
@@ -651,6 +649,9 @@ img, canvas, iframe, video, svg, select, textarea {
   color: #fff; }
   .btn--gray:hover, .btn--gray:focus, .btn--gray:active {
     background-color: rgba(46, 46, 46, 0.99); }
+
+.btn--s {
+  padding: 0.5rem; }
 
 .bg--red {
   background-color: #e74c3c; }
