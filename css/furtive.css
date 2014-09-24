@@ -736,3 +736,14 @@ img, canvas, iframe, video, svg, select, textarea {
 
 .list--unstyled {
   list-style-type: none; }
+
+input {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 100%;
+  box-shadow: none;
+  border: thin solid rgba(216, 216, 216, 0.99); }
+
+input[type="submit"] {
+  margin-top: 0.85rem; }
