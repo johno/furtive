@@ -4,13 +4,89 @@ _Currently under development._
 
 A forward-thinking, lightweight, CSS microframework. Minimal by design.
 
+Furtive is __truly__ mobile-first and nearly all dimensions are done in `rem`. 
+It also has a small footprint, cutting down on the bandwidth necessary 
+for downloading CSS. Furtive is intended to be just that, furtive. It's 
+the perfect starting point to get your project up and running.
+
+Furtive remains lightweight because it doesn't preoccupy itself with older browsers.
+As a result, Furtive can use cutting edge tech like [flexbox](http://caniuse.com/#search=flex),
+[SVGs](http://caniuse.com/#search=svg), and limited vendor prefixing. It's also available
+in SCSS, CSS, and comes with a gulpfile for customizing the build.
+
 ## Installation
 
-TODO: Instructions
+You can install via [bower](http://bower.io):
+
+```
+$ bower install --save furtive
+```
+
+Or, you can install via [npm](http://npmjs.org):
+
+```
+$ npm install --save furtive
+```
+Or, you can clone the source:
+
+```
+$ git clone https://github.com/johnotander/furtive.git
+```
+
+### Using the SCSS
+
+In your Scss file, you can import furtive:
+
+```scss
+@import "/path/to/furtive/scss/all";
+```
+
+Or, if you like, you can just import a subset of the files, they're located in the
+`scss` directory.
+
+#### Customizing the SCSS
+
+Furtive contains a file `scss/_variables.scss`, which allows for variable customization:
+
+```scss
+$font-family: 'Lato', Helvetica, sans-serif;
+$dark-gray: #222;
+$text-color: $dark-gray;
+$body-bg: #fafafa;
+
+@import "/path/to/furtive/scss/all";
+```
+
+### Using the CSS
+
+Furtive provides two CSS files: `furtive.css`, and a minified version `furtive.min.css`. In
+order to use one, you can add a `<link>` in your `<head>`.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- ... -->
+  <link rel="stylesheet" href="/path/to/furtive/css/furtive.min.css">
+  <!-- ... -->
+</head>
+<body>
+  <!-- ... -->
+</body>
+</html>
+```
+
+#### Grabbing from the CDN
+
+Furtive is also available on TODO CDN, in order to link from there you can add the following to your `<head>`:
+
+```html
+<link rel="stylesheet" href="//path/to/cdn/furtive.min.css">
+```
 
 ## Usage
 
-TODO: Instructions
+Detailed documentation can be found at [furtive.com](http://furtive.co).
 
 ## License
 
@@ -29,3 +105,5 @@ MIT
 * [Normalize](http://necolas.github.io/normalize.css) for the foundation.
 * [BASSCSS](http://basscss.com) for the inspiration.
 * [Fluidity](http://fluidity.sexy) for the inspiration.
+
+Crafted with <3 by [John Otander](http://johnotander.com) ([@4lpine](https://twitter.com/4lpine)).
