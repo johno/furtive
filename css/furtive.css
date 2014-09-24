@@ -747,3 +747,13 @@ input {
 
 input[type="submit"] {
   margin-top: 0.85rem; }
+
+.media {
+  display: flex;
+  align-items: flex-start; }
+
+.media .media-figure {
+  margin-right: 1em; }
+
+.media .media-body {
+  flex: 1; }
