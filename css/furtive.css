@@ -615,7 +615,7 @@ img, canvas, iframe, video, svg, select, textarea {
 .btn, .btn--link, .btn--blue, .btn--green, .btn--gray {
   padding: 1rem;
   border: 2px solid #ccc;
-  border-radius: 2px;
+  border-radius: 3px;
   color: #333;
   text-decoration: none;
   text-align: center; }
