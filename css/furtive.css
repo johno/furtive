@@ -743,7 +743,7 @@ img, canvas, iframe, video, svg, select, textarea {
 .list--unstyled {
   list-style-type: none; }
 
-input {
+input, textarea {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   display: block;
