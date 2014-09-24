@@ -1,0 +1,15 @@
+table th {
+  @extend .caps;
+  @extend .txt--left;
+}
+
+table th,
+table td {
+  padding: .25rem;
+  word-wrap: none;
+  line-height: 1;
+}
+
+td:before {
+  white-space: no-wrap;
+}

@@ -242,7 +242,8 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -264,7 +265,6 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -320,7 +320,8 @@ td, th {
   padding: 0; }
 
 * {
-  box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
 
 .measure {
   max-width: 48rem;
@@ -556,7 +557,7 @@ pre, code {
 .bold {
   font-weight: bold; }
 
-.caps {
+.caps, table th {
   font-variant: small-caps; }
 
 .justify {
@@ -593,8 +594,11 @@ pre, code {
 .txt--right {
   text-align: right; }
 
-.txt--left {
+.txt--left, table th {
   text-align: left; }
+
+.oflow-y--scroll {
+  overflow-y: scroll; }
 
 .w100, .w100--s {
   width: 100%;
@@ -749,11 +753,25 @@ input[type="submit"] {
   margin-top: 0.85rem; }
 
 .media {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start; }
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .media .media-figure {
   margin-right: 1em; }
 
 .media .media-body {
-  flex: 1; }
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0;
+          flex: 1 0 0; }
+
+table th, table td {
+  padding: 0.25rem;
+  word-wrap: none;
+  line-height: 1; }
+
+td:before {
+  white-space: no-wrap; }
