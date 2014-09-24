@@ -736,3 +736,6 @@ img, canvas, iframe, video, svg, select, textarea {
 
 .border {
   border: thin solid rgba(216, 216, 216, 0.99); }
+
+.list--unstyled {
+  list-style-type: none; }
