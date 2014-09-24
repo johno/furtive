@@ -536,7 +536,7 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.414rem; }
 
-h5, .h5 {
+h5, .h5, table th {
   font-size: 1.121rem; }
 
 h6, .h6 {
@@ -767,6 +767,9 @@ input[type="submit"] {
   -webkit-flex: 1 0 0;
       -ms-flex: 1 0 0;
           flex: 1 0 0; }
+
+table > thead {
+  border-bottom: thin solid rgba(250, 250, 250, 0.99); }
 
 table th, table td {
   padding: 0.25rem;

@@ -1,6 +1,11 @@
 table th {
   @extend .caps;
   @extend .txt--left;
+  @extend .h5;
+}
+
+table > thead {
+  border-bottom: thin solid $off-white;
 }
 
 table th,
