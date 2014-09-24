@@ -4,3 +4,13 @@
   max-width: $measure-width;
   margin: 0 auto;
 }
+
+a {
+  color: $link-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($link-color, 10%);
+  }
+}
