@@ -86,7 +86,7 @@ Furtive is also available on TODO CDN, in order to link from there you can add t
 
 ## Usage
 
-Detailed documentation can be found at [furtive.com](http://furtive.co).
+Detailed documentation can be found at [furtive.co](http://furtive.co).
 
 ## License
 
