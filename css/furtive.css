@@ -703,7 +703,7 @@ img, canvas, iframe, video, svg, select, textarea {
 .fnt--off-white {
   color: rgba(250, 250, 250, 0.99); }
 
-.brdr--rounded {
+.brdr--rounded, .btn, .btn--link, .btn--blue, .btn--green, .btn--gray {
   border-radius: 3px; }
 
 .brdr--light-gray {
