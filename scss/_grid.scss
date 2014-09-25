@@ -1,0 +1,91 @@
+// From: https://github.com/johnotander/flexbox.git
+
+.grd {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.grd .row {
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grd .col,
+.grd .col-1,
+.grd .col-2,
+.grd .col-3,
+.grd .col-4,
+.grd .col-5,
+.grd .col-6,
+.grd .col-7 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+.grd .col-1 {
+  max-width: 14.28571%;
+  flex-basis: 14.28571%;
+}
+
+.grd .col--offset-1 {
+  margin-left: 14.28571%;
+}
+
+.grd .col-2 {
+  max-width: 28.57142%;
+  flex-basis: 28.57142%;
+}
+
+.grd .col--offset-2 {
+  margin-left: 28.57142%;
+}
+
+.grd .col-3 {
+  max-width: 42.85714%;
+  flex-basis: 42.85714%;
+}
+
+.grd .col--offset-3 {
+  margin-left: 42.85714%;
+}
+
+.grd .col-4 {
+  max-width: 57.14285%;
+  flex-basis: 57.14285%;
+}
+
+.grd .col--offset-4 {
+  margin-left: 57.14285%;
+}
+
+.grd .col-5 {
+  max-width: 71.4285%;
+  flex-basis: 71.4285%;
+}
+
+.grd .col--offset-5 {
+  margin-left: 71.4285%;
+}
+
+.grd .col-6 {
+  max-width: 85.7142%;
+  flex-basis: 85.7142%;
+}
+
+.grd .col--offset-6 {
+  margin-left: 85.7142%;
+}
+
+.grd .col-7 {
+  max-width: 100%;
+  flex-basis: 100%;
+}
