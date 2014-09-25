@@ -1,3 +1,5 @@
-.border { border: thin solid $light-gray; }
-
-.border--rounded { border-radius: $border-radius; }
+.brdr--rounded { border-radius: $border-radius; }
+.brdr--light-gray { border: thin solid $light-gray; }
+.brdr--mid-gray   { border: thin solid $mid-gray; }
+.brdr--dark-gray  { border: thin solid $dark-gray; }
+.brdr--off-white  { border: thin solid $off-white; }

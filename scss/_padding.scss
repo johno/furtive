@@ -11,31 +11,3 @@ $padding: 1rem;
 .p2  { padding: $padding*2; }
 .px2 { padding-left: $padding*2; padding-right: $padding*2; }
 .py2 { padding-top: $padding*2; padding-bottom: $padding*2; }
-
-@media screen and (min-width: $viewport-m) {
-  .p0-m  { padding: 0; }
-  .px0-m { padding-left: 0; padding-right: 0; }
-  .py0-m { padding-top: 0; padding-bottom: 0; }
-
-  .p1-m  { padding: $padding; }
-  .px1-m { padding-left: $padding; padding-right: $padding; }
-  .py1-m { padding-top: $padding; padding-bottom: $padding; }
-
-  .p2-m  { padding: $padding*2; }
-  .px2-m { padding-left: $padding*2; padding-right: $padding*2; }
-  .py2-m { padding-top: $padding*2; padding-bottom: $padding*2; }
-}
-
-@media screen and (min-width: $viewport-l) {
-  .p0-l  { padding: 0; }
-  .px0-l { padding-left: 0; padding-right: 0; }
-  .py0-l { padding-top: 0; padding-bottom: 0; }
-
-  .p1-l  { padding: $padding; }
-  .px1-l { padding-left: $padding; padding-right: $padding; }
-  .py1-l { padding-top: $padding; padding-bottom: $padding; }
-
-  .p2-l  { padding: $padding*2; }
-  .px2-l { padding-left: $padding*2; padding-right: $padding*2; }
-  .py2-l { padding-top: $padding*2; padding-bottom: $padding*2; }
-}
