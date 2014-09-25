@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.30
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add spec="." args=[".",null]
+8 verbose parsed spec { raw: '.',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: null,
+8 verbose parsed spec   rawSpec: '.',
+8 verbose parsed spec   spec: '/Users/johno/code/frnt/furtive',
+8 verbose parsed spec   type: 'local' }
+9 verbose cache add local package /Users/johno/code/frnt/furtive
+10 silly lockFile 3a52ce78- .
+11 verbose lock . /Users/johno/.npm/3a52ce78-.lock
+12 verbose tar pack [ '/Users/johno/.npm/furtive/0.0.3/package.tgz', '.' ]
+13 verbose tarball /Users/johno/.npm/furtive/0.0.3/package.tgz
+14 verbose folder .
+15 info prepublish furtive@0.0.3
+16 silly lockFile 1f1177db-tar tar://.
+17 verbose lock tar://. /Users/johno/.npm/1f1177db-tar.lock
+18 silly lockFile 66845dd3-no-npm-furtive-0-0-3-package-tgz tar:///Users/johno/.npm/furtive/0.0.3/package.tgz
+19 verbose lock tar:///Users/johno/.npm/furtive/0.0.3/package.tgz /Users/johno/.npm/66845dd3-no-npm-furtive-0-0-3-package-tgz.lock
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 1f1177db-tar tar://.
+22 silly lockFile 66845dd3-no-npm-furtive-0-0-3-package-tgz tar:///Users/johno/.npm/furtive/0.0.3/package.tgz
+23 silly lockFile 66845dd3-no-npm-furtive-0-0-3-package-tgz tar:///Users/johno/.npm/furtive/0.0.3/package.tgz
+24 silly lockFile 3426c778--johno-npm-furtive-0-0-3-package /Users/johno/.npm/furtive/0.0.3/package
+25 verbose lock /Users/johno/.npm/furtive/0.0.3/package /Users/johno/.npm/3426c778--johno-npm-furtive-0-0-3-package.lock
+26 silly lockFile 3426c778--johno-npm-furtive-0-0-3-package /Users/johno/.npm/furtive/0.0.3/package
+27 silly lockFile 3426c778--johno-npm-furtive-0-0-3-package /Users/johno/.npm/furtive/0.0.3/package
+28 silly lockFile 3a52ce78- .
+29 silly lockFile 3a52ce78- .
+30 silly publish { name: 'furtive',
+30 silly publish   version: '0.0.3',
+30 silly publish   description: 'A forward-thinking, CSS micro-framework. Minimal by design.',
+30 silly publish   main: 'gulpfile.js',
+30 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+30 silly publish   repository:
+30 silly publish    { type: 'git',
+30 silly publish      url: 'https://github.com/johnotander/furtive.git' },
+30 silly publish   keywords: [ 'furtive', 'css', 'microframework', 'scss' ],
+30 silly publish   author:
+30 silly publish    { name: 'John Otander',
+30 silly publish      email: 'johnotander@gmail.com',
+30 silly publish      url: 'http://johnotander.com/' },
+30 silly publish   license: 'MIT',
+30 silly publish   bugs: { url: 'https://github.com/johnotander/furtive/issues' },
+30 silly publish   homepage: 'https://github.com/johnotander/furtive',
+30 silly publish   devDependencies:
+30 silly publish    { gray: '0.0.4',
+30 silly publish      gulp: '^3.8.8',
+30 silly publish      'gulp-autoprefixer': '^1.0.1',
+30 silly publish      'gulp-minify-css': '^0.3.10',
+30 silly publish      'gulp-rename': '^1.2.0',
+30 silly publish      'gulp-sass': '^0.7.3',
+30 silly publish      'normalize.css': '^3.0.1' },
+30 silly publish   readme: '# Furtive\n\n_Currently under development._\n\nA forward-thinking, lightweight, CSS microframework. Minimal by design.\n\nFurtive is __truly__ mobile-first and nearly all dimensions are done in `rem`. \nIt also has a small footprint, cutting down on the bandwidth necessary \nfor downloading CSS. Furtive is intended to be just that, furtive. It\'s \nthe perfect starting point to get your project up and running.\n\nFurtive remains lightweight because it doesn\'t preoccupy itself with older browsers.\nAs a result, Furtive can use cutting edge tech like [flexbox](http://caniuse.com/#search=flex),\n[SVGs](http://caniuse.com/#search=svg), and limited vendor prefixing. It\'s also available\nin SCSS, CSS, and comes with a gulpfile for customizing the build.\n\n## Installation\n\nYou can install via [bower](http://bower.io):\n\n```\n$ bower install --save furtive\n```\n\nOr, you can install via [npm](http://npmjs.org):\n\n```\n$ npm install --save furtive\n```\nOr, you can clone the source:\n\n```\n$ git clone https://github.com/johnotander/furtive.git\n```\n\n### Using the SCSS\n\nIn your Scss file, you can import furtive:\n\n```scss\n@import "/path/to/furtive/scss/all";\n```\n\nOr, if you like, you can just import a subset of the files, they\'re located in the\n`scss` directory.\n\n#### Customizing the SCSS\n\nFurtive contains a file `scss/_variables.scss`, which allows for variable customization:\n\n```scss\n$font-family: \'Lato\', Helvetica, sans-serif;\n$dark-gray: #222;\n$text-color: $dark-gray;\n$body-bg: #fafafa;\n\n@import "/path/to/furtive/scss/all";\n```\n\n### Using the CSS\n\nFurtive provides two CSS files: `furtive.css`, and a minified version `furtive.min.css`. In\norder to use one, you can add a `<link>` in your `<head>`.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <!-- ... -->\n  <link rel="stylesheet" href="/path/to/furtive/css/furtive.min.css">\n  <!-- ... -->\n</head>\n<body>\n  <!-- ... -->\n</body>\n</html>\n```\n\n#### Grabbing from the CDN\n\nFurtive is also available on TODO CDN, in order to link from there you can add the following to your `<head>`:\n\n```html\n<link rel="stylesheet" href="//path/to/cdn/furtive.min.css">\n```\n\n## Usage\n\nDetailed documentation can be found at [furtive.co](http://furtive.co).\n\n## License\n\nMIT\n\n## Contributing\n\n1. Fork it\n2. Create your feature branch (`git checkout -b my-new-feature`)\n3. Commit your changes (`git commit -am \'Add some feature\'`)\n4. Push to the branch (`git push origin my-new-feature`)\n5. Create new Pull Request\n\n## Thanks to the following:\n\n* [Normalize](http://necolas.github.io/normalize.css) for the foundation.\n* [BASSCSS](http://basscss.com) for the inspiration.\n* [Fluidity](http://fluidity.sexy) for the inspiration.\n\nCrafted with <3 by [John Otander](http://johnotander.com) ([@4lpine](https://twitter.com/4lpine)).',
+30 silly publish   readmeFilename: 'README.md',
+30 silly publish   gitHead: 'aedfde7a054b9bd62e5864250f6388704f634c26',
+30 silly publish   _id: 'furtive@0.0.3',
+30 silly publish   _shasum: '76dde164a072e6dc7c9fbf1cd523da90eab411c8',
+30 silly publish   _from: '.' }
+31 verbose mapToRegistry name furtive
+32 verbose mapToRegistry uri https://registry.npmjs.org/furtive
+33 verbose publish registryBase https://registry.npmjs.org/
+34 verbose request on initialization, where is /furtive
+35 verbose request after pass 1, where is /furtive
+36 verbose request url raw /furtive
+37 verbose request resolving registry [ 'https://registry.npmjs.org/', './furtive' ]
+38 verbose request after pass 2, where is https://registry.npmjs.org/furtive
+39 verbose request sending authorization for write operation
+40 info attempt registry request try #1 at 22:11:12
+41 verbose request id 0405515ddc49cf3b
+42 http request PUT https://registry.npmjs.org/furtive
+43 http 403 https://registry.npmjs.org/furtive
+44 verbose headers { date: 'Thu, 25 Sep 2014 04:11:13 GMT',
+44 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+44 verbose headers   'content-type': 'application/json',
+44 verbose headers   'cache-control': 'max-age=60',
+44 verbose headers   'content-length': '6171',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   'x-served-by': 'cache-sjc3134-SJC',
+44 verbose headers   'x-cache': 'MISS',
+44 verbose headers   'x-cache-hits': '0',
+44 verbose headers   'x-timer': 'S1411618273.228769,VS0,VE143',
+44 verbose headers   'keep-alive': 'timeout=10, max=50',
+44 verbose headers   connection: 'Keep-Alive' }
+45 error publish Failed PUT 403
+46 verbose stack Error: forbidden cannot modify pre-existing version: 0.0.3
+46 verbose stack old={"name":"furtive","version":"0.0.3","description":"A forward-thinking, CSS micro-framework. Minimal by design.","main":"gulpfile.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/johnotander/furtive.git"},"keywords":["furtive","css","microframework","scss"],"author":{"name":"John Otander","email":"johnotander@gmail.com","url":"http://johnotander.com/"},"license":"MIT","bugs":{"url":"https://github.com/johnotander/furtive/issues"},"homepage":"https://github.com/johnotander/furtive","devDependencies":{"gray":"0.0.4","gulp":"^3.8.8","gulp-autoprefixer":"^1.0.1","gulp-minify-css":"^0.3.10","gulp-rename":"^1.2.0","gulp-sass":"^0.7.3","normalize.css":"^3.0.1"},"gitHead":"fc31da69e31356f7ad7bcb10859c8e956834c76b","_id":"furtive@0.0.3","_shasum":"5d9ceb86bc8ecf78562d9fd434ee1d484b706528","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"johno","email":"johnotander@gmail.com"},"maintainers":[{"name":"johno","email":"johnotander@gmail.com"}],"dist":{"shasum":"5d9ceb86bc8ecf78562d9fd434ee1d484b706528","tarball":"http://registry.npmjs.org/furtive/-/furtive-0.0.3.tgz"}}
+46 verbose stack new={"name":"furtive","version":"0.0.3","description":"A forward-thinking, CSS micro-framework. Minimal by design.","main":"gulpfile.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/johnotander/furtive.git"},"keywords":["furtive","css","microframework","scss"],"author":{"name":"John Otander","email":"johnotander@gmail.com","url":"http://johnotander.com/"},"license":"MIT","bugs":{"url":"https://github.com/johnotander/furtive/issues"},"homepage":"https://github.com/johnotander/furtive","devDependencies":{"gray":"0.0.4","gulp":"^3.8.8","gulp-autoprefixer":"^1.0.1","gulp-minify-css":"^0.3.10","gulp-rename":"^1.2.0","gulp-sass":"^0.7.3","normalize.css":"^3.0.1"},"readme":"# Furtive\u000a\u000a_Currently under development._\u000a\u000aA forward-thinking, lightweight, CSS microframework. Minimal by design.\u000a\u000aFurtive is __truly__ mobile-first and nearly all dimensions are done in `rem`. \u000aIt also has a small footprint, cutting down on the bandwidth necessary \u000afor downloading CSS. Furtive is intended to be just that, furtive. It's \u000athe perfect starting point to get your project up and running.\u000a\u000aFurtive remains lightweight because it doesn't preoccupy itself with older browsers.\u000aAs a result, Furtive can use cutting edge tech like [flexbox](http://caniuse.com/#search=flex),\u000a[SVGs](http://caniuse.com/#search=svg), and limited vendor prefixing. It's also available\u000ain SCSS, CSS, and comes with a gulpfile for customizing the build.\u000a\u000a## Installation\u000a\u000aYou can install via [bower](http://bower.io):\u000a\u000a```\u000a$ bower install --save furtive\u000a```\u000a\u000aOr, you can install via [npm](http://npmjs.org):\u000a\u000a```\u000a$ npm install --save furtive\u000a```\u000aOr, you can clone the source:\u000a\u000a```\u000a$ git clone https://github.com/johnotander/furtive.git\u000a```\u000a\u000a### Using the SCSS\u000a\u000aIn your Scss file, you can import furtive:\u000a\u000a```scss\u000a@import \"/path/to/furtive/scss/all\";\u000a```\u000a\u000aOr, if you like, you can just import a subset of the files, they're located in the\u000a`scss` directory.\u000a\u000a#### Customizing the SCSS\u000a\u000aFurtive contains a file `scss/_variables.scss`, which allows for variable customization:\u000a\u000a```scss\u000a$font-family: 'Lato', Helvetica, sans-serif;\u000a$dark-gray: #222;\u000a$text-color: $dark-gray;\u000a$body-bg: #fafafa;\u000a\u000a@import \"/path/to/furtive/scss/all\";\u000a```\u000a\u000a### Using the CSS\u000a\u000aFurtive provides two CSS files: `furtive.css`, and a minified version `furtive.min.css`. In\u000aorder to use one, you can add a `<link>` in your `<head>`.\u000a\u000a```html\u000a<!DOCTYPE html>\u000a<html>\u000a<head>\u000a  <!-- ... -->\u000a  <link rel=\"stylesheet\" href=\"/path/to/furtive/css/furtive.min.css\">\u000a  <!-- ... -->\u000a</head>\u000a<body>\u000a  <!-- ... -->\u000a</body>\u000a</html>\u000a```\u000a\u000a#### Grabbing from the CDN\u000a\u000aFurtive is also available on TODO CDN, in order to link from there you can add the following to your `<head>`:\u000a\u000a```html\u000a<link rel=\"stylesheet\" href=\"//path/to/cdn/furtive.min.css\">\u000a```\u000a\u000a## Usage\u000a\u000aDetailed documentation can be found at [furtive.co](http://furtive.co).\u000a\u000a## License\u000a\u000aMIT\u000a\u000a## Contributing\u000a\u000a1. Fork it\u000a2. Create your feature branch (`git checkout -b my-new-feature`)\u000a3. Commit your changes (`git commit -am 'Add some feature'`)\u000a4. Push to the branch (`git push origin my-new-feature`)\u000a5. Create new Pull Request\u000a\u000a## Thanks to the following:\u000a\u000a* [Normalize](http://necolas.github.io/normalize.css) for the foundation.\u000a* [BASSCSS](http://basscss.com) for the inspiration.\u000a* [Fluidity](http://fluidity.sexy) for the inspiration.\u000a\u000aCrafted with <3 by [John Otander](http://johnotander.com) ([@4lpine](https://twitter.com/4lpine)).","readmeFilename":"README.md","gitHead":"aedfde7a054b9bd62e5864250f6388704f634c26","_id":"furtive@0.0.3","_shasum":"76dde164a072e6dc7c9fbf1cd523da90eab411c8","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"johno","email":"johnotander@gmail.com"},"maintainers":[{"name":"johno","email":"johnotander@gmail.com"}],"dist":{"shasum":"76dde164a072e6dc7c9fbf1cd523da90eab411c8","tarball":"http://registry.npmjs.org/furtive/-/furtive-0.0.3.tgz"}}: furtive
+46 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:261:14)
+46 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
+46 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+46 verbose stack     at Request.emit (events.js:98:17)
+46 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+46 verbose stack     at Request.emit (events.js:117:20)
+46 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+46 verbose stack     at IncomingMessage.emit (events.js:117:20)
+46 verbose stack     at _stream_readable.js:938:16
+46 verbose stack     at process._tickCallback (node.js:419:13)
+47 verbose statusCode 403
+48 verbose pkgid furtive
+49 verbose cwd /Users/johno/code/frnt/furtive
+50 error Darwin 13.4.0
+51 error argv "node" "/usr/local/bin/npm" "publish"
+52 error node v0.10.30
+53 error npm  v2.0.0
+54 error code E403
+55 error forbidden cannot modify pre-existing version: 0.0.3
+55 error old={"name":"furtive","version":"0.0.3","description":"A forward-thinking, CSS micro-framework. Minimal by design.","main":"gulpfile.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/johnotander/furtive.git"},"keywords":["furtive","css","microframework","scss"],"author":{"name":"John Otander","email":"johnotander@gmail.com","url":"http://johnotander.com/"},"license":"MIT","bugs":{"url":"https://github.com/johnotander/furtive/issues"},"homepage":"https://github.com/johnotander/furtive","devDependencies":{"gray":"0.0.4","gulp":"^3.8.8","gulp-autoprefixer":"^1.0.1","gulp-minify-css":"^0.3.10","gulp-rename":"^1.2.0","gulp-sass":"^0.7.3","normalize.css":"^3.0.1"},"gitHead":"fc31da69e31356f7ad7bcb10859c8e956834c76b","_id":"furtive@0.0.3","_shasum":"5d9ceb86bc8ecf78562d9fd434ee1d484b706528","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"johno","email":"johnotander@gmail.com"},"maintainers":[{"name":"johno","email":"johnotander@gmail.com"}],"dist":{"shasum":"5d9ceb86bc8ecf78562d9fd434ee1d484b706528","tarball":"http://registry.npmjs.org/furtive/-/furtive-0.0.3.tgz"}}
+55 error new={"name":"furtive","version":"0.0.3","description":"A forward-thinking, CSS micro-framework. Minimal by design.","main":"gulpfile.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/johnotander/furtive.git"},"keywords":["furtive","css","microframework","scss"],"author":{"name":"John Otander","email":"johnotander@gmail.com","url":"http://johnotander.com/"},"license":"MIT","bugs":{"url":"https://github.com/johnotander/furtive/issues"},"homepage":"https://github.com/johnotander/furtive","devDependencies":{"gray":"0.0.4","gulp":"^3.8.8","gulp-autoprefixer":"^1.0.1","gulp-minify-css":"^0.3.10","gulp-rename":"^1.2.0","gulp-sass":"^0.7.3","normalize.css":"^3.0.1"},"readme":"# Furtive\u000a\u000a_Currently under development._\u000a\u000aA forward-thinking, lightweight, CSS microframework. Minimal by design.\u000a\u000aFurtive is __truly__ mobile-first and nearly all dimensions are done in `rem`. \u000aIt also has a small footprint, cutting down on the bandwidth necessary \u000afor downloading CSS. Furtive is intended to be just that, furtive. It's \u000athe perfect starting point to get your project up and running.\u000a\u000aFurtive remains lightweight because it doesn't preoccupy itself with older browsers.\u000aAs a result, Furtive can use cutting edge tech like [flexbox](http://caniuse.com/#search=flex),\u000a[SVGs](http://caniuse.com/#search=svg), and limited vendor prefixing. It's also available\u000ain SCSS, CSS, and comes with a gulpfile for customizing the build.\u000a\u000a## Installation\u000a\u000aYou can install via [bower](http://bower.io):\u000a\u000a```\u000a$ bower install --save furtive\u000a```\u000a\u000aOr, you can install via [npm](http://npmjs.org):\u000a\u000a```\u000a$ npm install --save furtive\u000a```\u000aOr, you can clone the source:\u000a\u000a```\u000a$ git clone https://github.com/johnotander/furtive.git\u000a```\u000a\u000a### Using the SCSS\u000a\u000aIn your Scss file, you can import furtive:\u000a\u000a```scss\u000a@import \"/path/to/furtive/scss/all\";\u000a```\u000a\u000aOr, if you like, you can just import a subset of the files, they're located in the\u000a`scss` directory.\u000a\u000a#### Customizing the SCSS\u000a\u000aFurtive contains a file `scss/_variables.scss`, which allows for variable customization:\u000a\u000a```scss\u000a$font-family: 'Lato', Helvetica, sans-serif;\u000a$dark-gray: #222;\u000a$text-color: $dark-gray;\u000a$body-bg: #fafafa;\u000a\u000a@import \"/path/to/furtive/scss/all\";\u000a```\u000a\u000a### Using the CSS\u000a\u000aFurtive provides two CSS files: `furtive.css`, and a minified version `furtive.min.css`. In\u000aorder to use one, you can add a `<link>` in your `<head>`.\u000a\u000a```html\u000a<!DOCTYPE html>\u000a<html>\u000a<head>\u000a  <!-- ... -->\u000a  <link rel=\"stylesheet\" href=\"/path/to/furtive/css/furtive.min.css\">\u000a  <!-- ... -->\u000a</head>\u000a<body>\u000a  <!-- ... -->\u000a</body>\u000a</html>\u000a```\u000a\u000a#### Grabbing from the CDN\u000a\u000aFurtive is also available on TODO CDN, in order to link from there you can add the following to your `<head>`:\u000a\u000a```html\u000a<link rel=\"stylesheet\" href=\"//path/to/cdn/furtive.min.css\">\u000a```\u000a\u000a## Usage\u000a\u000aDetailed documentation can be found at [furtive.co](http://furtive.co).\u000a\u000a## License\u000a\u000aMIT\u000a\u000a## Contributing\u000a\u000a1. Fork it\u000a2. Create your feature branch (`git checkout -b my-new-feature`)\u000a3. Commit your changes (`git commit -am 'Add some feature'`)\u000a4. Push to the branch (`git push origin my-new-feature`)\u000a5. Create new Pull Request\u000a\u000a## Thanks to the following:\u000a\u000a* [Normalize](http://necolas.github.io/normalize.css) for the foundation.\u000a* [BASSCSS](http://basscss.com) for the inspiration.\u000a* [Fluidity](http://fluidity.sexy) for the inspiration.\u000a\u000aCrafted with <3 by [John Otander](http://johnotander.com) ([@4lpine](https://twitter.com/4lpine)).","readmeFilename":"README.md","gitHead":"aedfde7a054b9bd62e5864250f6388704f634c26","_id":"furtive@0.0.3","_shasum":"76dde164a072e6dc7c9fbf1cd523da90eab411c8","_from":".","_npmVersion":"2.0.0","_npmUser":{"name":"johno","email":"johnotander@gmail.com"},"maintainers":[{"name":"johno","email":"johnotander@gmail.com"}],"dist":{"shasum":"76dde164a072e6dc7c9fbf1cd523da90eab411c8","tarball":"http://registry.npmjs.org/furtive/-/furtive-0.0.3.tgz"}}: furtive
+56 error If you need help, you may report this error at:
+56 error     <http://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
