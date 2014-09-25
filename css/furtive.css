@@ -630,6 +630,7 @@ img, canvas, iframe, video, svg, select, textarea {
   background-color: #3498db;
   color: #fff; }
   .btn--blue:hover, .btn--blue:focus, .btn--blue:active {
+    color: #fff;
     background-color: #217dbb; }
 
 .btn--green {
@@ -637,6 +638,7 @@ img, canvas, iframe, video, svg, select, textarea {
   background-color: #25ba84;
   color: #fff; }
   .btn--green:hover, .btn--green:focus, .btn--green:active {
+    color: #fff;
     background-color: #1d8f65; }
 
 .btn--gray {
@@ -644,6 +646,7 @@ img, canvas, iframe, video, svg, select, textarea {
   background-color: rgba(72, 72, 72, 0.99);
   color: #fff; }
   .btn--gray:hover, .btn--gray:focus, .btn--gray:active {
+    color: #fff;
     background-color: rgba(46, 46, 46, 0.99); }
 
 .btn--s {

@@ -39,6 +39,7 @@
   &:hover,
   &:focus,
   &:active {
+    color: $white;
     background-color: darken($blue, 10%);
   }
 }
@@ -53,6 +54,7 @@
   &:hover,
   &:focus,
   &:active {
+    color: $white;
     background-color: darken($green, 10%);
   }
 }
@@ -67,6 +69,7 @@
   &:hover,
   &:focus,
   &:active {
+    color: $white;
     background-color: darken($dark-gray, 10%);
   }
 }
