@@ -660,6 +660,3 @@ table th, table td {
   padding: 0.25rem;
   word-wrap: none;
   line-height: 1; }
-
-td:before {
-  white-space: no-wrap; }
