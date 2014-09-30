@@ -324,8 +324,6 @@ td, th {
   padding-right: 1rem; }
 
 .grd .row {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
   max-width: 100%;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -351,8 +349,8 @@ td, th {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem; }
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
 
 .grd .col-1 {
   max-width: 14.28571%;

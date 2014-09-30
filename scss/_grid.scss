@@ -6,8 +6,6 @@
 }
 
 .grd .row {
-  margin-left: -.5rem;
-  margin-right: -.5rem;
   max-width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -27,8 +25,8 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: .25rem;
+  padding-right: .25rem;
 }
 
 .grd .col-1 {
