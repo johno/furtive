@@ -351,8 +351,8 @@ td, th {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem; }
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
 
 .grd .col-1 {
   max-width: 14.28571%;
