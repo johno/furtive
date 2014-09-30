@@ -1,6 +1,6 @@
 {
   "name": "furtive",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "A forward-thinking, CSS micro-framework. Minimal by design.",
   "main": "gulpfile.js",
   "scripts": {
