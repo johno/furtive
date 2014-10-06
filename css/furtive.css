@@ -676,7 +676,7 @@ img, canvas, iframe, video, svg, select, textarea {
   border: thin solid rgba(250, 250, 250, 0.99); }
 
 .btn, .btn--link, .btn--blue, .btn--green, .btn--gray {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border: 2px solid #ccc;
   color: #333;
   text-decoration: none;
