@@ -103,5 +103,6 @@ MIT
 * [Normalize](http://necolas.github.io/normalize.css) for the foundation.
 * [BASSCSS](http://basscss.com) for the inspiration.
 * [Fluidity](http://fluidity.sexy) for the inspiration.
+* [mincss](http://mincss.com/) for the inspiration.
 
 Crafted with <3 by [John Otander](http://johnotander.com) ([@4lpine](https://twitter.com/4lpine)).
