@@ -74,14 +74,6 @@ order to use one, you can add a `<link>` in your `<head>`.
 </html>
 ```
 
-#### Grabbing from the CDN
-
-Furtive is also available on TODO CDN, in order to link from there you can add the following to your `<head>`:
-
-```html
-<link rel="stylesheet" href="//path/to/cdn/furtive.min.css">
-```
-
 ## Usage
 
 Detailed documentation can be found at [furtive.co](http://furtive.co).
