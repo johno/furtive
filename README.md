@@ -76,7 +76,7 @@ order to use one, you can add a `<link>` in your `<head>`.
 
 ## Usage
 
-Detailed documentation can be found at [furtive.co](http://furtive.co).
+Detailed documentation and examples can be found at [furtive.co](http://furtive.co).
 
 ## License
 
