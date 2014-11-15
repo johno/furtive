@@ -2,7 +2,9 @@
 
 A forward-thinking, lightweight, CSS microframework. Minimal by design.
 
-Furtive is __truly__ mobile-first and nearly all dimensions are done in `rem`. 
+__2.5kB gzipped.__
+
+Furtive is _truly_ mobile-first and nearly all dimensions are done in `rem`.
 It also has a small footprint, cutting down on the bandwidth necessary 
 for downloading CSS. Furtive is intended to be just that, furtive. It's 
 the perfect starting point to get your project up and running.
