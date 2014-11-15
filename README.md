@@ -78,6 +78,35 @@ order to use one, you can add a `<link>` in your `<head>`.
 
 Detailed documentation and examples can be found at [furtive.co](http://furtive.co).
 
+#### Keep Furtive as lightweight as possible
+
+It's recommended to use Furtive with [uncss](https://github.com/giakki/uncss), ensuring that
+only the CSS that is being used are included. An example of uncss in action with gulp:
+
+```javascript
+gulp.task('uncss', function() {
+  return gulp.src('css/furtive.min.css')
+    .pipe(size({ gzip: true, showFiles: true }))
+    .pipe(uncss({ html: ['index.html'] }))
+    .pipe(rename('index.furtive.min.css'))
+    .pipe(cssmin())
+    .pipe(size({ gzip: true, showFiles: true }))
+    .pipe(gulp.dest('./'));
+});
+```
+
+The above example task is what's used by [furtive.co](http://furtive.co). It allows that page
+to save about 40%, shrinking even further from 2.5kB to 1.6kB.
+
+```
+furtive [uncss●●] % gulp uncss
+[12:07:22] Using gulpfile ~/code/frnt/furtive/gulpfile.js
+[12:07:22] Starting 'uncss'...
+[12:07:22] furtive.min.css 2.52 kB (gzipped)
+[12:07:23] index.furtive.min.css 1.58 kB (gzipped)
+[12:07:23] Finished 'uncss' after 999 ms
+```
+
 ## License
 
 MIT
