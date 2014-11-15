@@ -30,6 +30,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^0.7.3",
     "gulp-size": "^1.1.0",
+    "gulp-uncss": "^0.5.1",
     "normalize.css": "^3.0.1"
   }
 }
