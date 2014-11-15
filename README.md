@@ -98,15 +98,15 @@ gulp.task('uncss', function() {
 ```
 
 The above example task is what's used by [furtive.co](http://furtive.co). It allows that page
-to save about 40%, shrinking even further from 2.5kB to 1.6kB.
+to save about 30%, shrinking even further from 2.5kB to 1.8kB.
 
 ```
 furtive [uncss●●] % gulp uncss
-[12:07:22] Using gulpfile ~/code/frnt/furtive/gulpfile.js
-[12:07:22] Starting 'uncss'...
-[12:07:22] furtive.min.css 2.52 kB (gzipped)
-[12:07:23] index.furtive.min.css 1.58 kB (gzipped)
-[12:07:23] Finished 'uncss' after 999 ms
+[12:23:43] Using gulpfile ~/code/frnt/furtive/gulpfile.js
+[12:23:43] Starting 'uncss'...
+[12:23:43] furtive.min.css 2.52 kB (gzipped)
+[12:23:44] index.furtive.min.css 1.8 kB (gzipped)
+[12:23:44] Finished 'uncss' after 970 ms
 ```
 
 ## License
