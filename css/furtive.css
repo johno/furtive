@@ -149,7 +149,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -242,8 +241,7 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 input[type="checkbox"], input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -264,7 +262,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -325,11 +322,13 @@ td, th {
 
 .grd .row {
   max-width: 100%;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
@@ -338,14 +337,17 @@ td, th {
           flex-wrap: wrap; }
 
 .grd .col, .grd .col-1, .grd .col-2, .grd .col-3, .grd .col-4, .grd .col-5, .grd .col-6, .grd .col-7 {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -412,9 +414,8 @@ td, th {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%; }
 
-* {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box; }
+*, *:after, *:before {
+  box-sizing: border-box; }
 
 .measure {
   max-width: 48rem;
@@ -734,9 +735,11 @@ input[type="submit"] {
   margin-top: 0.85rem; }
 
 .media {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start; }
@@ -745,6 +748,7 @@ input[type="submit"] {
   margin-right: 1em; }
 
 .media .media-body {
+  -webkit-box-flex: 1;
   -webkit-flex: 1 0 0;
       -ms-flex: 1 0 0;
           flex: 1 0 0; }
