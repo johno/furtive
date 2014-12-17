@@ -14,8 +14,7 @@ var banner = ['/**',
               ' * @version v<%= pkg.version %>',
               ' * @link <%= pkg.homepage %>',
               ' * @license <%= pkg.license %>',
-              ' */\n',
-              ''].join('\n');
+              ' */\n\n'].join('\n');
 
 gulp.task('scss', function() {
   return gulp.src('scss/all.scss')
