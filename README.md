@@ -5,8 +5,8 @@ A forward-thinking, lightweight, CSS microframework. Minimal by design.
 __2.5kB gzipped.__
 
 Furtive is _truly_ mobile-first and nearly all dimensions are done in `rem`.
-It also has a small footprint, cutting down on the bandwidth necessary 
-for downloading CSS. Furtive is intended to be just that, furtive. It's 
+It also has a small footprint, cutting down on the bandwidth necessary
+for downloading CSS. Furtive is intended to be just that, furtive. It's
 the perfect starting point to get your project up and running.
 
 Furtive remains lightweight because it doesn't preoccupy itself with older browsers.
@@ -35,7 +35,7 @@ $ git clone https://github.com/johnotander/furtive.git
 
 ### Using the SCSS
 
-In your Scss file, you can import furtive:
+In your SCSS file, you can import furtive:
 
 ```scss
 @import "/path/to/furtive/scss/all";
@@ -116,10 +116,11 @@ MIT
 ## Contributing
 
 1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+* Create your feature branch (`git checkout -b my-new-feature`)
+* Install the dependencies and run gulp (`npm i && gulp`)
+* Commit your changes (`git commit -am 'Add some feature'`)
+* Push to the branch (`git push origin my-new-feature`)
+* Create new Pull Request
 
 ## Thanks to the following:
 
