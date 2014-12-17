@@ -2,7 +2,7 @@
   "name": "furtive",
   "version": "1.0.2",
   "description": "A forward-thinking, CSS micro-framework. Minimal by design.",
-  "homepage": "http://furtive.co",
+  "homepage": "https://github.com/johnotander/furtive",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,8 +22,8 @@
   "bugs": {
     "url": "https://github.com/johnotander/furtive/issues"
   },
-  "homepage": "https://github.com/johnotander/furtive",
   "devDependencies": {
+    "a11y": "^0.2.2",
     "gray": "0.0.4",
     "gulp": "^3.8.8",
     "gulp-autoprefixer": "^1.0.1",
@@ -33,6 +33,7 @@
     "gulp-sass": "^0.7.3",
     "gulp-size": "^1.1.0",
     "gulp-uncss": "^0.5.1",
+    "gulp-util": "^3.0.1",
     "normalize.css": "^3.0.1"
   }
 }
