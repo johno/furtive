@@ -692,7 +692,8 @@ img, canvas, iframe, video, svg, select, textarea {
   text-align: center; }
 
 .btn:hover, .btn:focus, .btn:active {
-  background-color: rgba(0, 0, 0, 0.05); }
+  background-color: rgba(0, 0, 0, 0.05);
+  color: black; }
 
 .btn--link {
   border-color: transparent;
