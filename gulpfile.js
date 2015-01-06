@@ -7,6 +7,10 @@ var size    = require('gulp-size');
 var uncss   = require('gulp-uncss');
 var header  = require('gulp-header');
 var gutil   = require('gulp-util');
+var rework  = require('gulp-rework');
+var grid    = require('rework-flex-grid');
+var replace = require('gulp-replace');
+var clean   = require('gulp-clean');
 var a11y    = require('a11y');
 
 var pkg = require('./package.json');
@@ -32,11 +36,28 @@ gulp.task('scss', function() {
     .pipe(gulp.dest('css'));
 });
 
+gulp.task('rework-grid', function() {
+  return gulp.src('scss/_grid.scss')
+    .pipe(replace(/\.*/, ''))
+    .pipe(clean())
+    .pipe(rework(
+      grid({
+        numColumns: 6,
+        classNames: {
+          grid: 'grd',
+          row: 'row',
+          col: 'col'
+        }
+      })
+    ))
+    .pipe(gulp.dest('scss'));
+});
+
 gulp.task('uncss', function() {
   return gulp.src('css/furtive.min.css')
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(uncss({ html: ['index.html'] }))
-    .pipe(rename('index.furtive.min.css'))
+    .pipe(rename('site/index.furtive.min.css'))
     .pipe(cssmin())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(gulp.dest('./'));

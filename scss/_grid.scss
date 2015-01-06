@@ -1,89 +1,149 @@
-// From: https://github.com/johnotander/flexbox.git
-
 .grd {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.grd .row {
-  max-width: 100%;
+.grd-row {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 
-.grd .col,
-.grd .col-1,
-.grd .col-2,
-.grd .col-3,
-.grd .col-4,
-.grd .col-5,
-.grd .col-6,
-.grd .col-7 {
-  box-sizing: border-box;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding-left: .25rem;
-  padding-right: .25rem;
+.grd-row-col-1-6 {
+  max-width: 16.6666666667%;
+  flex-basis: 16.6666666667%;
 }
 
-.grd .col-1 {
-  max-width: 14.28571%;
-  flex-basis: 14.28571%;
+.grd-row-col-2-6 {
+  max-width: 33.3333333333%;
+  flex-basis: 33.3333333333%;
 }
 
-.grd .col--offset-1 {
-  margin-left: 14.28571%;
+.grd-row-col-3-6 {
+  max-width: 50%;
+  flex-basis: 50%;
 }
 
-.grd .col-2 {
-  max-width: 28.57142%;
-  flex-basis: 28.57142%;
+.grd-row-col-4-6 {
+  max-width: 66.6666666667%;
+  flex-basis: 66.6666666667%;
 }
 
-.grd .col--offset-2 {
-  margin-left: 28.57142%;
+.grd-row-col-5-6 {
+  max-width: 83.3333333333%;
+  flex-basis: 83.3333333333%;
 }
 
-.grd .col-3 {
-  max-width: 42.85714%;
-  flex-basis: 42.85714%;
-}
-
-.grd .col--offset-3 {
-  margin-left: 42.85714%;
-}
-
-.grd .col-4 {
-  max-width: 57.14285%;
-  flex-basis: 57.14285%;
-}
-
-.grd .col--offset-4 {
-  margin-left: 57.14285%;
-}
-
-.grd .col-5 {
-  max-width: 71.4285%;
-  flex-basis: 71.4285%;
-}
-
-.grd .col--offset-5 {
-  margin-left: 71.4285%;
-}
-
-.grd .col-6 {
-  max-width: 85.7142%;
-  flex-basis: 85.7142%;
-}
-
-.grd .col--offset-6 {
-  margin-left: 85.7142%;
-}
-
-.grd .col-7 {
+.grd-row-col-6 {
   max-width: 100%;
   flex-basis: 100%;
+}
+
+.grd-row-col-1-6,.grd-row-col-1-6--sm,.grd-row-col-1-6--md,.grd-row-col-1-6--lg,.grd-row-col-2-6,.grd-row-col-2-6--sm,.grd-row-col-2-6--md,.grd-row-col-2-6--lg,.grd-row-col-3-6,.grd-row-col-3-6--sm,.grd-row-col-3-6--md,.grd-row-col-3-6--lg,.grd-row-col-4-6,.grd-row-col-4-6--sm,.grd-row-col-4-6--md,.grd-row-col-4-6--lg,.grd-row-col-5-6,.grd-row-col-5-6--sm,.grd-row-col-5-6--md,.grd-row-col-5-6--lg,.grd-row-col-6,.grd-row-col-6--sm,.grd-row-col-6--md,.grd-row-col-6--lg {
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.grd-row-col-1-6--sm,.grd-row-col-1-6--md,.grd-row-col-1-6--lg,.grd-row-col-2-6--sm,.grd-row-col-2-6--md,.grd-row-col-2-6--lg,.grd-row-col-3-6--sm,.grd-row-col-3-6--md,.grd-row-col-3-6--lg,.grd-row-col-4-6--sm,.grd-row-col-4-6--md,.grd-row-col-4-6--lg,.grd-row-col-5-6--sm,.grd-row-col-5-6--md,.grd-row-col-5-6--lg,.grd-row-col-6--sm,.grd-row-col-6--md,.grd-row-col-6--lg {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 32rem) {
+  .grd-row-col-1-6--sm {
+    max-width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
+  }
+
+  .grd-row-col-2-6--sm {
+    max-width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
+  }
+
+  .grd-row-col-3-6--sm {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .grd-row-col-4-6--sm {
+    max-width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
+  }
+
+  .grd-row-col-5-6--sm {
+    max-width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
+  }
+
+  .grd-row-col-6--sm {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .grd-row-col-1-6--md {
+    max-width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
+  }
+
+  .grd-row-col-2-6--md {
+    max-width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
+  }
+
+  .grd-row-col-3-6--md {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .grd-row-col-4-6--md {
+    max-width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
+  }
+
+  .grd-row-col-5-6--md {
+    max-width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
+  }
+
+  .grd-row-col-6--md {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .grd-row-col-1-6--lg {
+    max-width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
+  }
+
+  .grd-row-col-2-6--lg {
+    max-width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
+  }
+
+  .grd-row-col-3-6--lg {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .grd-row-col-4-6--lg {
+    max-width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
+  }
+
+  .grd-row-col-5-6--lg {
+    max-width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
+  }
+
+  .grd-row-col-6--lg {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 }

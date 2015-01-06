@@ -7,14 +7,14 @@
 <meta name="author" content="John Otander">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="A forward-thinking, CSS micro-framework. Minimal by design.">
-<link rel="stylesheet" href="index.furtive.min.css">
+<link rel="stylesheet" href="site/index.furtive.min.css">
 </head>
 <body>
   <div class="py2">
     <div class="txt--center">
       <h1 class="h2">
         Furtive<br>
-        <small class="small muted">A forward-thinking, CSS micro-framework (2.5kB).</small>
+        <small class="small muted">A forward-thinking, CSS micro-framework (2.67kB).</small>
       </h1>
       <div class="my2">
         <a href="https://github.com/johnotander/furtive.git" class="btn" title="Furtive source code">Github</a>
@@ -38,73 +38,63 @@
       </p>
     </section>
   </div>
-  <div class="p2 measure">
-    <div class="py2">
-      <h4 class="h2">Installing Furtive</h4>
-      <code>$ npm install --save furtive</code> <br>
-      <code>$ bower install --save furtive</code> <br>
-      <code>$ git clone <a href="https://github.com/johnotander/furtive">https://github.com/johnotander/furtive</a></code>
-    </div>
-  </div>
   <div class="py2 bg--off-white" id="grid">
     <div class="measure p2">
       <h3>Responsive Grid System</h3>
 
       <p class="h4">
-        Furtive comes with a responsive grid system based on <code>display: flex;</code>. There are 7 available columns,
-        however this is easy to customize.
+        Furtive comes with a responsive grid system based on <code>display: flex;</code>. There are 6 available columns,
+        however this is easy to customize since it's dynamically generated as part of the build process with
+        <a href="https://github.com/johnotander/rework-flex-grid">rework-flex-grid</a>.
       </p>
 
       <div class="grd bg--off-white brdr--white p2 small">
         <div class="txt--center">
-          <code>&nbsp;.grd > .row > .col</code>
+          <code>&nbsp;.grd > .grd-row > .grd-row-col</code>
         </div>
-        <div class="row my1">
-          <div class="col-1 bg--light-gray py1">
-              <code>&nbsp;.col-1</code>
+        <div class="grd-row my1">
+          <div class="grd-row-col-1-6 bg--light-gray py1">
+            <code>&nbsp;.col-1</code>
           </div>
-          <div class="col-6 py1 bg--white">
-            <code>&nbsp;.col-6</code>
-          </div>
-        </div>
-        <div class="row my1">
-          <div class="col-2 bg--light-gray py1">
-              <code>&nbsp;.col-2</code>
-          </div>
-          <div class="col-5 py1 bg--white">
+          <div class="grd-row-col-5-6 py1 bg--white">
             <code>&nbsp;.col-5</code>
           </div>
         </div>
-        <div class="row my1">
-          <div class="col-3 bg--light-gray py1">
-              <code>&nbsp;.col-3</code>
+        <div class="grd-row my1">
+          <div class="grd-row-col-2-6 bg--light-gray py1">
+            <code>&nbsp;.col-2</code>
           </div>
-          <div class="col-4 py1 bg--white">
+          <div class="grd-row-col-4-6 py1 bg--white">
             <code>&nbsp;.col-4</code>
           </div>
         </div>
-        <div class="row my1">
-          <div class="col-4 bg--light-gray py1">
-              <code>&nbsp;.col-4</code>
+        <div class="grd-row my1">
+          <div class="grd-row-col-3-6 bg--light-gray py1">
+            <code>&nbsp;.col-3</code>
           </div>
-          <div class="col-3 py1 bg--white">
+          <div class="grd-row-col-3-6 py1 bg--white">
             <code>&nbsp;.col-3</code>
           </div>
         </div>
-        <div class="row my1">
-          <div class="col-5 bg--light-gray py1">
-              <code>&nbsp;.col-5</code>
+        <div class="grd-row my1">
+          <div class="grd-row-col-4-6 bg--light-gray py1">
+            <code>&nbsp;.col-4</code>
           </div>
-          <div class="col-2 py1 bg--white">
+          <div class="grd-row-col-2-6 py1 bg--white">
             <code>&nbsp;.col-2</code>
           </div>
         </div>
-        <div class="row my1">
-          <div class="col-6 bg--light-gray py1">
-              <code>&nbsp;.col-6</code>
+        <div class="grd-row my1">
+          <div class="grd-row-col-5-6 bg--light-gray py1">
+            <code>&nbsp;.col-5</code>
           </div>
-          <div class="col-1 py1 bg--white">
+          <div class="grd-row-col-1-6 py1 bg--white">
             <code>&nbsp;.col-1</code>
+          </div>
+        </div>
+        <div class="grd-row my1">
+          <div class="grd-row-col-6 bg--light-gray py1">
+            <code>&nbsp;.col-6</code>
           </div>
         </div>
       </div>
@@ -139,7 +129,7 @@
 
       <p class="h4">
         Forms are typically a key component for most websites and web applications. As
-        such, Furtive seeks to keep them consistent, coherent, and elegant for all devices.        
+        such, Furtive seeks to keep them consistent, coherent, and elegant for all devices.
       </p>
 
       <form action="#" role="form" class="my2">
