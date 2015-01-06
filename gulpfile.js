@@ -51,14 +51,13 @@ gulp.task('rework-grid', function() {
       })
     ))
     .pipe(gulp.dest('scss'));
-
 });
 
 gulp.task('uncss', function() {
   return gulp.src('css/furtive.min.css')
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(uncss({ html: ['index.html'] }))
-    .pipe(rename('index.furtive.min.css'))
+    .pipe(rename('site/index.furtive.min.css'))
     .pipe(cssmin())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(gulp.dest('./'));
