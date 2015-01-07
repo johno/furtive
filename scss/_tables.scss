@@ -1,0 +1,16 @@
+table th {
+  @extend .caps;
+  @extend .txt--left;
+  @extend .h5;
+}
+
+table > thead {
+  border-bottom: thin solid $off-white;
+}
+
+table th,
+table td {
+  padding: .25rem;
+  word-wrap: none;
+  line-height: 1;
+}

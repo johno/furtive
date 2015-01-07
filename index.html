@@ -3,39 +3,102 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta charset="utf-8">
-<title>Furtive</title>
+<title>Furtive CSS</title>
 <meta name="author" content="John Otander">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="A forward-thinking, CSS micro-framework. Minimal by design.">
-<link rel="stylesheet" href="css/furtive.min.css">
+<link rel="stylesheet" href="site/index.furtive.min.css">
 </head>
 <body>
   <div class="py2">
     <div class="txt--center">
       <h1 class="h2">
         Furtive<br>
-        <small class="small muted">A forward-thinking, CSS micro-framework.</small>
+        <small class="small muted">A forward-thinking, CSS micro-framework (4.36kB gzipped).</small>
       </h1>
       <div class="my2">
-        <a href="https://github.com/johnotander/furtive.git" class="btn">Github</a>
+        <a href="https://github.com/johnotander/furtive.git" class="btn" title="Furtive source code">Github</a>
       </div>
     </div>
   </div>
-  <div class="bg--off-white p2">
+  <div class="bg--off-white py2">
     <section class="measure p2" id="why-furtive">
       <h2>Why Furtive?</h2>
       <p class="h4">
-        Furtive is <em>truly</em> mobile-first. Meaning, all media queries are done by larger viewports.
-        This cuts back on the processing necessary for mobile devices. It also has a small footprint, cutting
-        down on the bandwidth necessary for downloading CSS. Furtive is intended to be just that, furtive.
+        Furtive is <em>truly</em> mobile-first and nearly all dimensions are done in <code>rem</code>.
+        It also has a small footprint, cutting down on the bandwidth necessary for downloading CSS.
+        Furtive is intended to be just that, furtive. It's the perfect starting point to get your project
+        up and running.
       </p>
       <p class="h4">
         Furtive remains lightweight because it doesn't preoccupy itself with older browsers. As
         a result, Furtive can use cutting edge tech like <a href="http://caniuse.com/#search=flexbox">flexbox</a>,
-        <a href="http://caniuse.com/#search=svg">SVGs</a>, and limited vendor prefixing. If older browser
-        support is necessary for you, it's probably not a good fit. Sorry about that.
+        <a href="http://caniuse.com/#search=svg">SVGs</a>, and limited vendor prefixing. It's also available in
+        SCSS, CSS, and comes with a gulpfile for customizing the build.
       </p>
     </section>
+  </div>
+  <div class="py2 bg--off-white" id="grid">
+    <div class="measure p2">
+      <h3>Responsive Grid System</h3>
+
+      <p class="h4">
+        Furtive comes with a responsive grid system based on <code>display: flex;</code>. There are 6 available columns,
+        however this is easy to customize since it's dynamically generated as part of the build process with
+        <a href="https://github.com/johnotander/rework-flex-grid">rework-flex-grid</a>.
+      </p>
+
+      <div class="grd bg--off-white brdr--white p2 small">
+        <div class="txt--center">
+          <code>&nbsp;.grd > .grd-row > .grd-row-col</code>
+        </div>
+        <div class="grd-row my1">
+          <div class="grd-row-col-1-6 bg--light-gray py1">
+            <code>&nbsp;.col-1</code>
+          </div>
+          <div class="grd-row-col-5-6 py1 bg--white">
+            <code>&nbsp;.col-5</code>
+          </div>
+        </div>
+        <div class="grd-row my1">
+          <div class="grd-row-col-2-6 bg--light-gray py1">
+            <code>&nbsp;.col-2</code>
+          </div>
+          <div class="grd-row-col-4-6 py1 bg--white">
+            <code>&nbsp;.col-4</code>
+          </div>
+        </div>
+        <div class="grd-row my1">
+          <div class="grd-row-col-3-6 bg--light-gray py1">
+            <code>&nbsp;.col-3</code>
+          </div>
+          <div class="grd-row-col-3-6 py1 bg--white">
+            <code>&nbsp;.col-3</code>
+          </div>
+        </div>
+        <div class="grd-row my1">
+          <div class="grd-row-col-4-6 bg--light-gray py1">
+            <code>&nbsp;.col-4</code>
+          </div>
+          <div class="grd-row-col-2-6 py1 bg--white">
+            <code>&nbsp;.col-2</code>
+          </div>
+        </div>
+        <div class="grd-row my1">
+          <div class="grd-row-col-5-6 bg--light-gray py1">
+            <code>&nbsp;.col-5</code>
+          </div>
+          <div class="grd-row-col-1-6 py1 bg--white">
+            <code>&nbsp;.col-1</code>
+          </div>
+        </div>
+        <div class="grd-row my1">
+          <div class="grd-row-col-6 bg--light-gray py1">
+            <code>&nbsp;.col-6</code>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <section class="measure p2" id="buttons">
     <h3>Buttons</h3>
@@ -44,23 +107,244 @@
       class can be extended to add custom colors and styling.
     </p>
 
-    <a href="#" class="w100--s my1 btn">.btn</a>
-    <a href="#" class="w100--s my1 btn--blue">.btn--blue</a>
-    <a href="#" class="w100--s my1 btn--green">.btn--green</a>
-    <a href="#" class="w100--s my1 btn--gray">.btn--gray</a>
-    <a href="#" class="w100--s my1 btn--link">.btn--link</a>
+    <a href="#!" class="w100--s my1 btn" title="Furtive button example">.btn</a>
+    <a href="#!" class="w100--s my1 btn--blue" title="Furtive button example">.btn--blue</a>
+    <a href="#!" class="w100--s my1 btn--green" title="Furtive button example">.btn--green</a>
+    <a href="#!" class="w100--s my1 btn--gray" title="Furtive button example">.btn--gray</a>
+    <a href="#!" class="w100--s my1 btn--link" title="Furtive button example">.btn--link</a>
 
     <h4 class="muted">Small buttons</h4>
     <p class="h4">
       You can also add <code>.btn--s</code> for smaller buttons.
     </p>
-    <a href="#" class="w100--s my1 btn btn--s">.btn</a>
-    <a href="#" class="w100--s my1 btn--blue btn--s">.btn--blue.btn--s</a>
-    <a href="#" class="w100--s my1 btn--green btn--s">.btn--green.btn--s</a>
-    <a href="#" class="w100--s my1 btn--gray btn--s">.btn--gray.btn--s</a>
-    <a href="#" class="w100--s my1 btn--link btn--s">.btn--link.btn--s</a>
+    <a href="#!" class="w100--s my1 btn btn--s" title="Furtive button example.">.btn</a>
+    <a href="#!" class="w100--s my1 btn--blue btn--s" title="Furtive button example.">.btn--blue.btn--s</a>
+    <a href="#!" class="w100--s my1 btn--green btn--s" title="Furtive button example.">.btn--green.btn--s</a>
+    <a href="#!" class="w100--s my1 btn--gray btn--s" title="Furtive button example.">.btn--gray.btn--s</a>
+    <a href="#!" class="w100--s my1 btn--link btn--s" title="Furtive button example.">.btn--link.btn--s</a>
   </section>
-  <div class="bg--off-white p2">
+  <div class="bg--off-white py2">
+    <section class="measure p2" id="forms">
+      <h3>Forms</h3>
+
+      <p class="h4">
+        Forms are typically a key component for most websites and web applications. As
+        such, Furtive seeks to keep them consistent, coherent, and elegant for all devices.
+      </p>
+
+      <form action="#" role="form" class="my2">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Enter your name...">
+        <label for="email">Email</label>
+        <input type="email" name"email" placeholder="user@example.com">
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="8 characters or more...">
+        <label for="bio">Bio</label>
+        <textarea name="bio" rows="3" placeholder="Tell us about yourself..."></textarea>
+        <input type="submit" value="Create Account" class="btn--blue">
+      </form>
+    </section>
+  </div>
+  <section class="measure p2" id="media-object">
+    <h3>Media Objects</h3>
+
+    <p class="h4">
+      As <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/" title="Media object article by Stubbornella">Stubbornella</a>
+      would say, the media object saves hundreds of lines of code. Furtive is inclined to agree.
+    </p>
+
+    <div class="media py2">
+      <div class="media-figure">
+        <img src="http://www.gravatar.com/avatar/2e52ef263083c77e2a0a24454dc6f369.png" alt="John Otander avatar">
+      </div>
+      <div class="media-body">
+        <h6 class="m0 p0">John Otander</h6>
+        <p class="m0 p0">
+          I think the media objects using <code>flex</code> are pretty rad. The CSS is lightweight, and can be
+          reused all over the place. Everyone's happy.
+        </p>
+        <div class="media py2">
+          <div class="media-figure">
+            <img src="http://www.gravatar.com/avatar/2e52ef263083c77e2a0a24454dc6f369.png" alt="John Otander avatar">
+          </div>
+          <div class="media-body">
+            <h6 class="m0 p0">John Otander</h6>
+            <p class="m0 p0">
+              They even nest. Not bad for about 10 lines of CSS. Now we wait for caniuse to report more favorably
+              for the flex box.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg--off-white py2">
+    <section class="measure p2" id="tables">
+      <h3>Tables</h3>
+
+      <p class="h4">
+        Tables are responsive, and beautiful, right out of the box.
+      </p>
+
+      <div class="oflow-y--scroll bg--white my2 p2">
+        <table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>name</th>
+              <th>twitter</th>
+              <th>email</th>
+              <th>website</th>
+              <th>beer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John</td>
+              <td>@4lpine</td>
+              <td>johnotander@gmail.com</td>
+              <td><a href="http://johnotander.com" title="John Otander's website.">johnotander.com</a></td>
+              <td>Fresh Squeezed IPA</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ryan</td>
+              <td>@sessynine</td>
+              <td>sessynine@gmail.com</td>
+              <td><a href="http://sessynine.com" title="Ryan Shelton's website.">sessynine.com</a></td>
+              <td>Coors Light</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <section class="measure p2" id="colors">
+    <h3>Colors</h3>
+
+    <p class="h4">
+      Inspiration is drawn from <a href="http://clrs.cc" title="Colors.css website">colors.css</a> and
+      <a href="http://getbootstrap.com" title="Bootstrap website">bootstrap</a> to provide helper classes
+      and variables.
+    </p>
+
+    <h4 class="muted" id="background-color">Backgrounds</h4>
+    <p class="h4">
+      There's an assortment of background colors that can be used for flash messages,
+      table headings... anything.
+    </p>
+    <div class="bg--white p2">.bg--white</div>
+    <div class="bg--off-white p2">.bg--off-white</div>
+    <div class="bg--light-gray p2">.bg--light-gray</div>
+    <div class="bg--mid-gray p2 fnt--white">.bg--mid-gray</div>
+    <div class="bg--dark-gray p2 fnt--white">.bg--dark-gray</div>
+    <div class="bg--red p2">.bg--red</div>
+    <div class="bg--orange p2">.bg--orange</div>
+    <div class="bg--blue p2">.bg--blue</div>
+    <div class="bg--green p2">.bg--green</div>
+
+    <h4 class="muted" id="borders">Borders</h4>
+
+    <p class="h4">
+      There are a few border classes to take advantage of in order to frame content.
+    </p>
+
+    <div class="brdr--off-white p1 my1">.brdr--off-white</div>
+    <div class="brdr--light-gray p1 my1">.brdr--light-gray</div>
+    <div class="brdr--mid-gray p1 my1">.brdr--mid-gray</div>
+    <div class="brdr--dark-gray p1 my1">.brdr--dark-gray</div>
+
+    <h4 class="muted" id="text-color">Text Colors</h4>
+      <p class="h4">
+        You can also modify the text color.
+      </p>
+      <span class="fnt--white bg--light-gray">.fnt--white</span>
+      <span class="fnt--off-white bg--light-gray">.fnt--off-white</span> <br>
+      <span class="fnt--light-gray">.fnt--light-gray</span>
+      <span class="fnt--mid-gray">.fnt--mid-gray</span>
+      <span class="fnt--dark-gray">.fnt--dark-gray</span>
+      <span class="fnt--red">.fnt--red</span>
+      <span class="fnt--orange">.fnt--orange</span>
+      <span class="fnt--blue">.fnt--blue</span>
+      <span class="fnt--green">.fnt--green</span>
+  </section>
+  <div class="bg--off-white py2">
+    <section class="measure p2" id="lists">
+      <h3>Lists</h3>
+
+      <p class="h4">
+        Simple, elegant, and nearly raw HTML. Some things don't really need to change.
+      </p>
+
+      <h4 class="muted">Ordered</h4>
+      <ol>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Oranges</li>
+      </ol>
+
+      <h4 class="muted">Unordered</h4>
+      <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Citrus</li>
+        <ul>
+          <li>Limes</li>
+          <li>Oranges</li>
+          <li>Grapefruit</li>
+        </ul>
+      </ul>
+
+      <h4 class="muted">Unstyled</h4>
+      <ul class="list--unstyled">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Oranges</li>
+      </ul>
+    </section>
+  </div>
+  <section class="measure p2" id="utilities">
+    <h3>Utilities</h3>
+
+    <p class="h4">
+      There's a collection of utility classes for modifying the interface.
+    </p>
+
+    <h4 class="muted">Padding</h4>
+    <div class="p0 my1 brdr--light-gray">.p0</div>
+    <div class="p1 my1 brdr--light-gray">.p1</div>
+    <div class="p2 my1 brdr--light-gray">.p2</div>
+    <div class="py1 my1 brdr--light-gray">.py1</div>
+    <div class="py2 my1 brdr--light-gray">.py2</div>
+    <div class="px1 my1 brdr--light-gray">.px1</div>
+    <div class="px2 my1 brdr--light-gray">.px2</div>
+
+    <h4 class="muted">Margin</h4>
+    <div class="m0 p1 brdr--light-gray">.m0</div>
+    <div class="m1 p1 brdr--light-gray">.m1</div>
+    <div class="m2 p1 brdr--light-gray">.m2</div>
+    <div class="my1 p1 brdr--light-gray">.my1</div>
+    <div class="my2 p1 brdr--light-gray">.my2</div>
+    <div class="mx1 p1 brdr--light-gray">.mx1</div>
+    <div class="mx2 p1 brdr--light-gray">.mx2</div>
+
+    <h4 class="muted" id="floats">Floats</h4>
+    <dl>
+      <dt>Float Left</dt>
+      <dd><code>.flt--left</code></dd>
+      <dt>Float Right</dt>
+      <dd><code>.flt--right</code></dd>
+      <dt>Float None</dt>
+      <dd><code>.flt--none</code></dd>
+    </dl>
+
+    <h4 class="muted" id="text-alignment">Text Alignment</h4>
+    <div class="p2 my1 txt--left bg--off-white">.txt--left</div>
+    <div class="p2 my1 txt--right bg--off-white">.txt--right</div>
+    <div class="p2 my1 txt--center bg--off-white">.txt--center</div>
+  </section>
+  <div class="bg--off-white py2">
     <section class="measure p2" id="type">
       <h3>Type</h3>
       <p class="h4">
@@ -70,7 +354,7 @@
       <h4 class="muted">Utilities</h4>
       <p class="h4">
         In order to ensure that you can modify type styling on the fly,
-        there are <span class="italics">italics</span>, <span class="thin">thin</span>,
+        there are <span class="italic">italics</span>, <span class="thin">thin</span>,
         <span class="bold">bold</span>, <span class="caps">caps</span>, and
         <span class="small">small</span>, <span class="muted">muted</span>,
         <code>code</code> classes.
@@ -90,49 +374,28 @@
       </p>
     </section>
   </div>
-  <section class="measure p2" id="colors">
-    <h3>Colors</h3>
-
-    <p class="h4">
-      Inspiration is drawn from <a href="http://clrs.cc">colors.css</a> and
-      <a href="http://getboostrap.com">bootstrap</a> to provide helper classes
-      and variables.
-    </p>
-
-    <h4 class="muted" id="background-color">Backgrounds</h4>
-    <p class="h4">
-      There's an assortment of background colors that can be used for flash messages,
-      table headings... anything.
-    </p>
-    <div class="bg--white p2">.bg--white</div>
-    <div class="bg--off-white p2">.bg--off-white</div>
-    <div class="bg--light-gray p2">.bg--light-gray</div>
-    <div class="bg--mid-gray p2 fnt--white">.bg--mid-gray</div>
-    <div class="bg--dark-gray p2 fnt--white">.bg--dark-gray</div>
-    <div class="bg--red p2">.bg--red</div>
-    <div class="bg--orange p2">.bg--orange</div>
-    <div class="bg--blue p2">.bg--blue</div>
-    <div class="bg--green p2">.bg--green</div>
-
-    <h4 class="muted" id="text-color">Text Colors</h4>
-      <p class="h4">
-        You can also modify the text color.
-      </p>
-      <span class="fnt--white bg--light-gray">.fnt--white</span>
-      <span class="fnt--off-white bg--light-gray">.fnt--off-white</span> <br>
-      <span class="fnt--light-gray">.fnt--light-gray</span>
-      <span class="fnt--mid-gray">.fnt--mid-gray</span>
-      <span class="fnt--dark-gray">.fnt--dark-gray</span>
-      <span class="fnt--red">.fnt--red</span>
-      <span class="fnt--orange">.fnt--orange</span>
-      <span class="fnt--blue">.fnt--blue</span>
-      <span class="fnt--green">.fnt--green</span>
-  </section>
-  <footer class="txt--center bg--off-white p2">
-    <p class="small">
-      Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>). <br>
-      &lt;/&gt; available on <a href="https://github.com/johnotander/furtive">Github</a>.
+  <div class="p2 measure">
+    <div class="py2">
+      <h4 class="h2">Installing Furtive</h4>
+      <code>$ npm install --save furtive</code> <br>
+      <code>$ bower install --save furtive</code> <br>
+      <code>$ git clone <a href="https://github.com/johnotander/furtive">https://github.com/johnotander/furtive</a></code>
+    </div>
+  </div>
+  <footer class="txt--center p2">
+    <p class="small p2">
+      Crafted with &lt;3 by <a href="http://johnotander.com" title="John Otander's website">John Otander</a>
+      (<a href="https://twitter.com/4lpine" title="John Otander on Twitter (@4lpine)">@4lpine</a>). <br>
+      &lt;/&gt; available on <a href="https://github.com/johnotander/furtive" title="Furtive source code">Github</a>.
     </p>
   </footer>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-55121523-1', 'auto');
+ga('send', 'pageview');
+</script>
 </body>
 </html>
