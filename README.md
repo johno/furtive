@@ -2,7 +2,7 @@
 
 A forward-thinking, lightweight, CSS microframework. Minimal by design.
 
-__2.67kB gzipped.__
+__4.36kB gzipped.__
 
 Furtive is _truly_ mobile-first and nearly all dimensions are done in `rem`.
 It also has a small footprint, cutting down on the bandwidth necessary

@@ -26,11 +26,11 @@ gulp.task('scss', function() {
   return gulp.src('scss/all.scss')
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))
-    .pipe(prefix("last 1 version", "> 1%", "ie 10"))
+    .pipe(prefix("last 2 versions"))
     .pipe(rename('furtive.css'))
     .pipe(header(banner, { pkg : pkg } ))
     .pipe(gulp.dest('css'))
-    .pipe(cssmin())
+    .pipe(cssmin({ keepSpecialComments: 0 }))
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('css'));
