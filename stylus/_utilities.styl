@@ -1,0 +1,40 @@
+.muted
+  opacity: .7
+.clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+.flt--left
+  float: left
+.flt--right
+  float: right
+.flt--none
+  float: none
+.center
+  margin: auto auto
+.txt--center
+  text-align: center
+.txt--right
+  text-align: right
+.txt--left
+  text-align: left
+.oflow-y--scroll
+  overflow-y: scroll
+.w100,
+.w100--s
+  width: 100%
+  display: block
+@media screen and (min-width: $viewport-m)
+  .w100--s
+    width: auto
+    display: inline-block
+// https://github.com/mrmrs/fluidity/blob/master/sass/_responsive-utilities.scss
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea
+  max-width: 100%
