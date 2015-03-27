@@ -121,7 +121,7 @@ function displaySeverity(report) {
 }
 
 gulp.task('watch', function() {
-  gulp.watch('scss/*.scss', ['scss']);
+  gulp.watch(['scss/*.scss','stylus/*.styl'], ['scss','stylus']);
 });
 
-gulp.task('default', ['scss', 'watch']);
+gulp.task('default', ['scss', 'stylus', 'watch']);
