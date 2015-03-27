@@ -1,6 +1,6 @@
 var gulp    = require('gulp');
 var sass    = require('gulp-sass');
-var gstylus  = require('gulp-stylus');
+var gstylus = require('gulp-stylus');
 var rename  = require('gulp-rename');
 var cssmin  = require('gulp-minify-css');
 var prefix  = require('gulp-autoprefixer');
