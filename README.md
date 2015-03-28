@@ -12,7 +12,7 @@ the perfect starting point to get your project up and running.
 Furtive remains lightweight because it doesn't preoccupy itself with older browsers.
 As a result, Furtive can use cutting edge tech like [flexbox](http://caniuse.com/#search=flex),
 [SVGs](http://caniuse.com/#search=svg), and limited vendor prefixing. It's also available
-in SCSS, CSS, and comes with a gulpfile for customizing the build.
+in SCSS, CSS, Stylus, and comes with a gulpfile for customizing the build.
 
 ## Installation
 
@@ -75,6 +75,11 @@ order to use one, you can add a `<link>` in your `<head>`.
 </body>
 </html>
 ```
+
+### Using the Stylus
+
+Similarly to the SCSS option, you can import stylus files as well, all stylus files
+are in the stylus directory.
 
 ## Usage
 

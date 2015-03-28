@@ -1,6 +1,6 @@
 {
   "name": "furtive",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A forward-thinking, CSS micro-framework. Minimal by design.",
   "homepage": "https://github.com/johnotander/furtive",
   "main": "gulpfile.js",
@@ -14,8 +14,10 @@
   "keywords": [
     "furtive",
     "css",
+    "framework",
     "microframework",
-    "scss"
+    "scss",
+    "stylus"
   ],
   "author": "John Otander <johnotander@gmail.com> (http://johnotander.com/)",
   "license": "MIT",
