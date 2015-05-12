@@ -49,6 +49,16 @@ $btn--base
   &:active
     color: $white
     background-color: darken($dark-gray, 10%)
+.btn--red
+  @extend $btn--base
+  border-color: darken($red, 5%)
+  background-color: $red
+  color: $white
+  &:hover,
+  &:focus,
+  &:active
+    color: $white
+    background-color: darken($red, 10%)
 .btn--s
   @extend .small
   padding: ($padding / 2)
