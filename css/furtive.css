@@ -423,7 +423,7 @@ td, th {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%; } }
 
-*, *:after, *:before {
+*, *::after, *::before {
   box-sizing: border-box; }
 
 .measure {
