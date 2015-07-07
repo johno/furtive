@@ -1,6 +1,6 @@
 {
   "name": "furtive",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "A forward-thinking, CSS micro-framework. Minimal by design.",
   "homepage": "https://github.com/johnotander/furtive",
   "main": "gulpfile.js",
