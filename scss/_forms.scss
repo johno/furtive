@@ -9,3 +9,9 @@ textarea {
 }
 
 input[type="submit"] { margin-top: .85rem; }
+
+input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: bottom;
+  width: auto;
+}
