@@ -136,13 +136,15 @@
 
       <form action="#" role="form" class="my2">
         <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Enter your name...">
+        <input type="text" name="name" id="name" placeholder="Enter your name...">
         <label for="email">Email</label>
-        <input type="email" name"email" placeholder="user@example.com">
+        <input type="email" name"email" id="email" placeholder="user@example.com">
         <label for="password">Password</label>
-        <input type="password" name="password" placeholder="8 characters or more...">
+        <input type="password" name="password" id="password" placeholder="8 characters or more...">
         <label for="bio">Bio</label>
-        <textarea name="bio" rows="3" placeholder="Tell us about yourself..."></textarea>
+        <textarea name="bio" id="bio" rows="3" placeholder="Tell us about yourself..."></textarea>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Subscribe to our newsletter</label>
         <input type="submit" value="Create Account" class="btn--blue">
       </form>
     </section>
