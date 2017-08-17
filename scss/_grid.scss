@@ -52,7 +52,7 @@
   flex-basis: 100%;
 }
 
-@media screen and (min-width: 32rem) {
+@media screen and (min-width: $viewport-m) {
   .grd-row-col-1-6--sm {
     max-width: 16.6666666667%;
     flex-basis: 16.6666666667%;
@@ -84,7 +84,7 @@
   }
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: $viewport-l) {
   .grd-row-col-1-6--md {
     max-width: 16.6666666667%;
     flex-basis: 16.6666666667%;
@@ -116,7 +116,7 @@
   }
 }
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: $viewport-xl) {
   .grd-row-col-1-6--lg {
     max-width: 16.6666666667%;
     flex-basis: 16.6666666667%;
