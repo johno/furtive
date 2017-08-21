@@ -13,6 +13,8 @@ var grid    = require('rework-flex-grid');
 var replace = require('gulp-replace');
 var clean   = require('gulp-clean');
 var a11y    = require('a11y');
+var postcss = require('gulp-postcss');
+var lint    = require('stylelint');
 
 var pkg = require('./package.json');
 var banner = ['/**',
@@ -23,7 +25,7 @@ var banner = ['/**',
               ' * @license <%= pkg.license %>',
               ' */\n\n'].join('\n');
 
-gulp.task('scss', function() {
+gulp.task('scss', ['scss:lint'], function() {
   return gulp.src('scss/all.scss')
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))
@@ -35,6 +37,11 @@ gulp.task('scss', function() {
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('css'));
+  });
+  
+gulp.task('scss:lint', function() {
+  gulp.src('scss/*.scss')
+    .pipe(postcss([lint()]))
 });
 
 gulp.task('stylus', function() {
