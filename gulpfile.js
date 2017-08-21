@@ -40,7 +40,7 @@ gulp.task('scss', ['scss:lint'], function() {
   });
   
 gulp.task('scss:lint', function() {
-  gulp.src('scss/*.scss')
+  gulp.src(['scss/*.scss', '!scss/_normalize.scss'])
     .pipe(postcss([lint()]))
 });
 
